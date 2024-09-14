@@ -30,8 +30,8 @@ content:
       tag: '*'
     - name: Public Cloud
       tag: Cloud
-    - name: Kubernetes 
-      tag: K8S
+    - name: Container Orchestration 
+      tag: CO
     - name: Network Virtualization
       tag: NV
 
