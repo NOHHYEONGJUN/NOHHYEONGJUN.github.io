@@ -19,9 +19,8 @@ author: admin
 ---
 
 👋 Hi, there! I'm **NOH HYEONGJUN**
-{style="font-size: 1.2rem; background: #6799FF; background: linear-gradient(to right, #FFB76B 0%, #FFA73D 30%, #FF7C00 60%, #FF7F04 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"}
-
-Studnet majoring Computer Science at Jenbuk National Univ.
-{style="font-size: 1.2rem; background: #5CD1E5; background: linear-gradient(to right, #FFB76B 0%, #FFA73D 30%, #FF7C00 60%, #FF7F04 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"}
+{style="font-size: 1.2rem; background: #6799FF; background: linear-gradient(to right, #A5C8FF 0%, #6799FF 50%, #3366CC 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"}
+Student majoring in Computer Science at Jeonbuk National University
+{style="font-size: 1.2rem; background: #6799FF; background: linear-gradient(to right, #A5C8FF 0%, #6799FF 50%, #3366CC 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"}
 
 Check out my [Resume](/about/) and portfolio below 😍
