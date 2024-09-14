@@ -27,6 +27,17 @@ cascade:
 defaultContentLanguage: en
 hasCJKLanguage: false
 defaultContentLanguageInSubdir: false
+languages:
+  en:
+    languageCode: en-us
+    contentDir: content/en
+    weight: 1
+    title: NOHHYEONGJUN-ENG
+  ko:
+    languageCode: ko-kr
+    contentDir: content/ko
+    weight: 2
+    title: NOHHYEONGJUN-KOR
 removePathAccents: true
 
 ############################
