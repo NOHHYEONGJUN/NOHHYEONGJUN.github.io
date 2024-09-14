@@ -62,8 +62,21 @@ social:
 #email: ""
 ---
 
-Alice Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
 
-{{< icon name="download" pack="fas" >}} {{< staticref "uploads/resume.pdf" "newtab" >}}Download{{< /staticref >}} my resumé as a PDF.
+## 전북대학교 컴퓨터인공지능학부 3학년 재학중인 노형준입니다.
+## 네트워크 가상화 및 클라우드 컴퓨팅에 관심을 가지고 공부 중입니다.
+
+### 소속
+- 전북대학교 컴퓨터 인공지능학부
+- 네트워크 서비스 및 컴퓨팅 연구실 (NSCL)
+
+### 관심 분야
+- Network Function Virtualization (NFV)
+- Multi-access Edge Computing (MEC)
+- Public Cloud (AWS)
+- Container Orchestration (K8S, OpenStack)
+- CI/CD (GitLab, Jenkins, Harbor, ArgoCD, SonarQube)
+
+
+{{< icon name="download" pack="fas" >}} {{< staticref "uploads/resume.pdf" "newtab" >}}Download{{< /staticref >}} 저의 Resume을 PDF로 제공합니다.
