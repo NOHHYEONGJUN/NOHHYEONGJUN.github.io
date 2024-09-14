@@ -10,9 +10,3 @@ main:
   - name: Resumé
     url: about/
     weight: 20
-  - name: English
-    url: '#'
-    weight: 1
-  - name: 한국어
-    url: '/ko'
-    weight: 2
