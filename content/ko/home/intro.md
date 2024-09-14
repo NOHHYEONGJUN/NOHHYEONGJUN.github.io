@@ -18,9 +18,9 @@ author: admin
 #  css_class: fullscreen
 ---
 
-👋 Hi, there! I'm **NOH HYEONGJUN**
+👋 안녕하세요! 저는 **노형준**입니다.
 {style="font-size: 1.2rem; background: #6799FF; background: linear-gradient(to right, #A5C8FF 0%, #6799FF 50%, #3366CC 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"}
-Student majoring in Computer Science at Jeonbuk National University
+전북대학교에서 컴퓨터 공학을 전공하고 있습니다.
 {style="font-size: 1.2rem; background: #6799FF; background: linear-gradient(to right, #A5C8FF 0%, #6799FF 50%, #3366CC 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"}
 
-Check out my [Resume](/about/) and portfolio below 😍
+  [Resume](/about/)에서 제 포트폴리오를 확인해주세요! 😍

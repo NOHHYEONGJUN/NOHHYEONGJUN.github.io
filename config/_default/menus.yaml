@@ -11,7 +11,7 @@ main:
     url: about/
     weight: 20
   - name: English
-    url: '#'
+    url: '/en'
     weight: 1
   - name: 한국어
     url: '/ko'
