@@ -18,7 +18,10 @@ author: admin
 #  css_class: fullscreen
 ---
 
-👋 Hi, there! I'm **NOH HYEONGJUN**, Studnet majoring Computer Science at Jenbuk National Univ.
+👋 Hi, there! I'm **NOH HYEONGJUN**
+{style="font-size: 1.2rem; background: #6799FF; background: linear-gradient(to right, #FFB76B 0%, #FFA73D 30%, #FF7C00 60%, #FF7F04 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"}
+
+Studnet majoring Computer Science at Jenbuk National Univ.
 {style="font-size: 1.2rem; background: #5CD1E5; background: linear-gradient(to right, #FFB76B 0%, #FFA73D 30%, #FF7C00 60%, #FF7F04 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"}
 
-Check out my [resumé](/about/) and portfolio below 😍
+Check out my [Resume](/about/) and portfolio below 😍

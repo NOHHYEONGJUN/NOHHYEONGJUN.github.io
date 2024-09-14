@@ -28,12 +28,12 @@ content:
   filter_button:
     - name: All
       tag: '*'
-    - name: Machine Learning
-      tag: ML
-    - name: Computer Vision
-      tag: CV
-    - name: NLP
-      tag: NLP
+    - name: Public Cloud
+      tag: Cloud
+    - name: Kubernetes 
+      tag: K8S
+    - name: Network Virtualization
+      tag: NV
 
 design:
   columns: '1'
