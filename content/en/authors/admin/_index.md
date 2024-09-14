@@ -62,8 +62,20 @@ social:
 #email: ""
 ---
 
-Alice Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+I am NOH HYEONGJUN, 
+a student in the Department of Computer Science at Jeonbuk National University.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+I am currently studying network virtualization and cloud computing with great interest.
+
+### Affiliations
+- Department of Computer Science, Jeonbuk National University
+- Network Service and Computing Laboratory (NSCL)
+
+### Research Interests
+- Network Function Virtualization (NFV)
+- Multi-access Edge Computing (MEC)
+- Public Cloud (AWS)
+- Container Orchestration (K8S, OpenStack)
+- CI/CD (GitLab, Jenkins, Harbor, ArgoCD, SonarQube)
 
 {{< icon name="download" pack="fas" >}} {{< staticref "uploads/resume.pdf" "newtab" >}}Download{{< /staticref >}} my resumé as a PDF.
