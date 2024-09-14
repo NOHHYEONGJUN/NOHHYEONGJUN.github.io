@@ -44,7 +44,7 @@ bio: My research interests include distributed robotics, mobile computing and pr
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'malito:nhj7804@jbnu.ac.kr' # For a direct email link, use "mailto:test@example.org".
+    link: 'mailto:nhj7804@jbnu.ac.kr' # For a direct email link, use "mailto:test@example.org".
   - icon: rss
     icon_pack: fas
     link: https://velog.io/@nhj7804
