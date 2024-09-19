@@ -51,7 +51,7 @@ social:
   - icon: github
     icon_pack: fab
     link: https://github.com/NOHHYEONGJUN
-    - icon: linkedin
+  - icon: linkedin
     icon_pack: fab
     link: www.linkedin.com/in/형준-노-22a1b5326
 
