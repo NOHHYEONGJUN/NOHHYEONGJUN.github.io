@@ -10,6 +10,6 @@ main:
   - name: Resume
     url: about/
     weight: 20
-  - name: Projects
-    url: projects/
+  - name: Project
+    url: project/
     weight: 30
