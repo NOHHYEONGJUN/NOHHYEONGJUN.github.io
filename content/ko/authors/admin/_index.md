@@ -71,11 +71,11 @@ social:
 
 네트워크 가상화 및 클라우드 컴퓨팅에 관심을 가지고 공부 중입니다.
 
-### 소속
+### <i class="fas fa-university"></i> 소속
 - 전북대학교 컴퓨터 인공지능학부
 - 네트워크 서비스 및 컴퓨팅 연구실 (NSCL)
 
-### 관심 분야
+### <i class="fas fa-laptop-code"></i> 관심 분야
 - Network Function Virtualization (NFV)
 - Multi-access Edge Computing (MEC)
 - Public Cloud (AWS)

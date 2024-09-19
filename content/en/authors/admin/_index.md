@@ -70,11 +70,11 @@ a student in the Department of Computer Science at Jeonbuk National University.
 
 I am currently studying network virtualization and cloud computing with great interest.
 
-### Affiliations
+### <i class="fas fa-university"></i> Affiliations
 - Department of Computer Science, Jeonbuk National University
 - Network Service and Computing Laboratory (NSCL)
 
-### Research Interests
+### <i class="fas fa-laptop-code"></i> Research Interests
 - Network Function Virtualization (NFV)
 - Multi-access Edge Computing (MEC)
 - Public Cloud (AWS)
