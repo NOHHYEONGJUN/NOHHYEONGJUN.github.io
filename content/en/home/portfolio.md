@@ -34,6 +34,8 @@ content:
       tag: CO
     - name: Network Virtualization
       tag: NV
+    - name: DevOps & Automation
+      tag: CICD
 
 design:
   columns: '1'
