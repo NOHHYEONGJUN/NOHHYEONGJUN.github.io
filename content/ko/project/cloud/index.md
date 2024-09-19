@@ -1,5 +1,5 @@
 ---
-title: OliveYoung LiveStream on AWS
+title: LiveStream on AWS
 summary: EKS / CI/CD / DR
 tags:
   - Cloud
