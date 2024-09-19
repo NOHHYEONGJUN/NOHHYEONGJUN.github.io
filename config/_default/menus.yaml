@@ -13,3 +13,6 @@ main:
   - name: Project
     url: project/
     weight: 30
+  - name: Contact
+    url: contact/
+    weight: 100
