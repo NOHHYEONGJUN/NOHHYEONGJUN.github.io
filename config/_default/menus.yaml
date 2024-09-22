@@ -13,6 +13,9 @@ main:
   - name: Project
     url: project/
     weight: 30
+  - name: Focus Areas
+    url: focus/
+    weight: 40
   - name: Contact
     url: contact/
     weight: 100
