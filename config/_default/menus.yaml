@@ -18,11 +18,11 @@ main:
     weight: 40
   - parent: Focus Areas
     name: Network Virtualization
-    url: Network-Virtualization/
+    url: focus/Network-Virtualization/
     weight: 41
   - parent: Focus Areas
     name: Cloud
-    url: Cloud/
+    url: focus/Cloud/
     weight: 42
   - name: Contact
     url: contact/
