@@ -1,0 +1,16 @@
+<nav class="navbar">
+    <div class="navbar-left">
+      <a href="{{ "/" | relLangURL }}" class="navbar-item navbar-home">
+        {{ site.Title }}
+      </a>
+    </div>
+    <div class="navbar-right">
+      {{ range site.Menus.main }}
+        {{ if ne .Identifier "home" }}
+          <a href="{{ .URL | relLangURL }}" class="navbar-item">
+            {{ .Name }}
+          </a>
+        {{ end }}
+      {{ end }}
+    </div>
+  </nav>
