@@ -84,3 +84,5 @@ social:
 
 
 {{< icon name="download" pack="fas" >}} {{< staticref "uploads/resume.pdf" "newtab" >}}Download{{< /staticref >}} 저의 Resume을 PDF로 제공합니다.
+
+<div style="margin-bottom: 120px;"></div>

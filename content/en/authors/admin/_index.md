@@ -82,3 +82,5 @@ I am currently studying network virtualization and cloud computing with great in
 - CI/CD (GitLab, Jenkins, Harbor, ArgoCD, SonarQube)
 
 {{< icon name="download" pack="fas" >}} {{< staticref "uploads/resume.pdf" "newtab" >}}Download{{< /staticref >}} my resumé as a PDF.
+
+<div style="margin-bottom: 120px;"></div>
