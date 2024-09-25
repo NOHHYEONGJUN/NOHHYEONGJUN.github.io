@@ -44,7 +44,7 @@ experience:
   - title: AWS Certified Solutions Architect – Associate (SAA)
     company: Amazon Web Services (AWS)
     company_url: 'https://aws.amazon.com/'
-    company_logo: aws-logo.jpeg
+    company_logo: aws
     location: ''
     date_start: '2024-09-01'
     date_end: ''
