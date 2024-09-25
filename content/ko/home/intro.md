@@ -23,4 +23,4 @@ author: admin
 전북대학교에서 컴퓨터 공학을 전공하고 있습니다.
 {style="font-size: 1.2rem; background: #6799FF; background: linear-gradient(to right, #A5C8FF 0%, #6799FF 50%, #3366CC 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"}
 
-  [Resume](/ko/about/)에서 제 포트폴리오를 확인해주세요! 😍
+  [Resume](/about/)에서 제 포트폴리오를 확인해주세요! 😍
