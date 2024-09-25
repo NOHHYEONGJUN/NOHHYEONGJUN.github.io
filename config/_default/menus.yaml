@@ -12,18 +12,19 @@ main:
     weight: 20
   - name: Projects
     url: projects/
+    weight: 30
   - parent: Projects
     url: live-stream/
     name: Live-Stream
-    weight: 21
+    weight: 31
   - parent: Projects
     url: 5g-testbed/
     name: 5G-Testbed
-    weight: 22
+    weight: 32
   - parent: Projects
     url: emotional/
     name: Emotional-Analysis
-    weight: 23
+    weight: 33
   - name: Focus Areas
     url: focus/
     weight: 40
@@ -37,5 +38,5 @@ main:
     weight: 42
   - name: Contact
     url: contact/
-    weight: 100
+    weight: 50
   
