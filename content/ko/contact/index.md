@@ -20,6 +20,20 @@ sections:
         longitude: '127.13444961966684'
       directions: 
       autolink: true
+      
+      contact_links:
+        - icon: google
+          icon_pack: fab
+          name: Email
+          link: 'mailto:nhj7804@jbnu.ac.kr'
+        - icon: whatsapp
+          icon_pack: fab
+          name: Phone
+          link: 'tel:010-2485-7804'
+        - icon: map-marked-alt
+          icon_pack: fas 
+          name: Location
+          link: 'https://www.google.com/maps/search/?api=1&query=35.84601324617979,127.13444961966684'
     design:
       columns: '3'
 
