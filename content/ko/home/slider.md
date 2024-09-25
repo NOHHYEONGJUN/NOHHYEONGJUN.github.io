@@ -32,10 +32,8 @@ content:
       content: <span style="font-size:70%">Network / ONOS / OpenAirInterface</span>
       align: center
       background:
-        image:
-          filename: network-virtualization.png
-          filters:
-            brightness: 0.4
+        media: network-virtualization.png
+        brightness: 0.4
         position: center
         color: '#000'
 
@@ -43,16 +41,14 @@ content:
       content: <span style="font-size:70%">GitLab / Jenkins / Harbor / ArgoCD / SonarQube</span>
       align: center
       background:
-        image:
-          filename: DevOps.jpeg
-          filters:
-            brightness: 0.4
+        media: DevOps.jpeg
+        brightness: 0.4
         position: center
         color: '#000'
 
 design:
   # Slide height is automatic unless you force a specific height (e.g. '400px')
-  slide_height: '350px'
+  slide_height: '500px'
   is_fullscreen: false
   # Automatically transition through slides?
   loop: true
