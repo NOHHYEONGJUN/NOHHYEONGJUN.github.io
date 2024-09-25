@@ -6,36 +6,27 @@ sections:
   - block: contact
     content:
       title: Contact
-      email: nhj7804@jbnu.ac.kr
-      phone: 010-2485-7804
-      address:
-        street: 전북대학교 공과대학 7호관 512호
-        city: 전주시
-        region: 전라북도
-        postcode: '54896'
-        country: 대한민국
-        country_code: KO
       coordinates:
         latitude: '35.84601324617979'
         longitude: '127.13444961966684'
       directions: 
       autolink: true
       
+      # 상세 정보를 포함한 아이콘 설정
       contact_links:
         - icon: google
           icon_pack: fab
-          name: Email
+          name: nhj7804@jbnu.ac.kr
           link: 'mailto:nhj7804@jbnu.ac.kr'
         - icon: whatsapp
           icon_pack: fab
-          name: Phone
+          name: 010-2485-7804
           link: 'tel:010-2485-7804'
         - icon: map-marked-alt
           icon_pack: fas 
-          name: Location
-          link: 'https://www.google.com/maps/search/?api=1&query=35.84601324617979,127.13444961966684'
+          name: 전라북도 전주시 전북대학교 공과대학 7호관 512호
     design:
-      columns: '3'
+      columns: '2'
 
 map:
   provider: 'mapnik'
