@@ -6,14 +6,14 @@ name = "Starter Blog"
   primary = "#4374D9"
 
   # Menu
-  menu_primary = "rgb(239, 244, 255)"
+  menu_primary = "rgb(247, 250, 252)"
   menu_text = "#34495e"
   menu_text_active = "#4374D9"
   menu_title = "#2b2b2b"
 
   # Home sections
-  home_section_odd = "rgb(239, 244, 255)"
-  home_section_even = "rgb(239, 244, 255)"
+  home_section_odd = "rgb(247, 250, 252)"
+  home_section_even = "rgb(247, 250, 252)"
 
 [dark]
   primary = "#bbdefb"
