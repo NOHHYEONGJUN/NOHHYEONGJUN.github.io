@@ -14,10 +14,8 @@ content:
       content: <span style="font-size:70%">Kubernetes / Docker</span>
       align: center
       background:
-        image:
-          filename: container-orchestration.png
-          filters:
-            brightness: 0.4
+        media: container-orchestration.png
+        brightness: 0.4
         position: center
         color: '#000'
 
@@ -25,10 +23,8 @@ content:
       content: <span style="font-size:70%">AWS / OpenStack</span>
       align: center
       background:
-        image:
-          filename: Cloud.jpg
-          filters:
-            brightness: 0.4
+        media: Cloud.jpg
+        brightness: 0.4
         position: center
         color: '#000'
 
