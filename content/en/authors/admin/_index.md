@@ -83,4 +83,4 @@ I am currently studying network virtualization and cloud computing with great in
 
 {{< icon name="download" pack="fas" >}} {{< staticref "uploads/resume.pdf" "newtab" >}}Download{{< /staticref >}} my resumé as a PDF.
 
-<div style="margin-bottom: 120px;"></div>
+<div style="margin-bottom: 100px;"></div>
