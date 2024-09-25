@@ -81,6 +81,6 @@ I am currently studying network virtualization and cloud computing with great in
 - Container Orchestration (K8S, OpenStack)
 - CI/CD (GitLab, Jenkins, Harbor, ArgoCD, SonarQube)
 
-{{< icon name="download" pack="fas" >}} {{< staticref "uploads/resume.pdf" "newtab" >}}Download{{< /staticref >}} my resumé as a PDF.
+{{< icon name="download" pack="fas" >}} {{< staticref "uploads/resume.pdf" "newtab" >}}Download{{< /staticref >}} my resume as a PDF.
 
 <div style="margin-bottom: 100px;"></div>

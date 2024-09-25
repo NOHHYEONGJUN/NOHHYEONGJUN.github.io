@@ -10,9 +10,20 @@ main:
   - name: Resume
     url: about/
     weight: 20
-  - name: Project
-    url: project/
-    weight: 30
+  - name: Projects
+    url: projects/
+  - parent: Projects
+    url: live-stream/
+    name: Live-Stream
+    weight: 21
+  - parent: Projects
+    url: 5g-testbed/
+    name: 5G-Testbed
+    weight: 22
+  - parent: Projects
+    url: emotional/
+    name: Emotional-Analysis
+    weight: 23
   - name: Focus Areas
     url: focus/
     weight: 40
