@@ -30,12 +30,10 @@ content:
       content: <span style="font-size:70%">AWS / OpenStack</span>
       align: center
       background:
-        image:
-          filename: Cloud.jpg
-          filters:
-            brightness: 0.4
+        image: "container-orchestration.png"
         position: center
         color: '#000'
+      overlay_filter: 0.4
 
     - title: <span style="font-size:70%">Network Virtualization</span>
       content: <span style="font-size:70%">Network / ONOS / OpenAirInterface</span>
