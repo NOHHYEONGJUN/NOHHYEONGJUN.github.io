@@ -17,7 +17,7 @@ marketing:
   seo:
     site_type: Person
     local_business_type: ''
-    org_name: ''
+    org_name: 'Portfolio'
     description: 'A highly-customizable Hugo blog theme powered by Wowchemy website builder.'
     twitter: 'GetResearchDev'
   analytics:
@@ -35,7 +35,7 @@ header:
   navbar:
     enable: true
     align: r
-    show_logo: false
+    show_logo: true
     show_language: false
     show_day_night: true
     show_search: true
