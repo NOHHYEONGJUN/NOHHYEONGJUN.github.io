@@ -6,13 +6,6 @@ sections:
   - block: contact
     content:
       title: Contact
-      coordinates:
-        latitude: '35.84601324617979'
-        longitude: '127.13444961966684'
-      directions: 
-      autolink: true
-      
-      # 상세 정보를 포함한 아이콘 설정
       contact_links:
         - icon: google
           icon_pack: fab
@@ -25,6 +18,8 @@ sections:
         - icon: map-marked-alt
           icon_pack: fas 
           name: 전라북도 전주시 전북대학교 공과대학 7호관 512호
+          link: 'https://www.google.com/maps/search/?api=1&query=35.84601324617979,127.13444961966684'
+      autolink: true
     design:
       columns: '2'
 
@@ -32,4 +27,7 @@ map:
   provider: 'mapnik'
   api_key: ''
   zoom: 15
+  coordinates:
+    latitude: '35.84601324617979'
+    longitude: '127.13444961966684'
 ---
