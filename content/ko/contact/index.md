@@ -1,86 +1,89 @@
 ---
-# An instance of the Contact widget.
-# Documentation: https://docs.hugoblox.com/page-builder/
-widget: contact
-
-# This file represents a page section.
-headless: true
-
-# Order that this section appears on the page.
-weight: 130
-
 title: Contact
-subtitle:
-
-content:
-  # Contact (edit or remove options as required)
-  email: nhj7804@jbnu.ac.kr
-  address:
-    street: 백제대로
-    city: 전주시
-    postcode: '94305'
-  coordinates:
-    latitude: '35.84601324617979'  
-    longitude: '127.13444961966684' 
-  directions: 512호
-  office_hours:
-    - 'Monday 10:00 to 13:00'
-    - 'Wednesday 09:00 to 10:00'
-  appointment_url: 'https://calendly.com'
-
-  # Automatically link email and phone or display as text?
-  autolink: true
-
-  # Email form provider
-  form:
-    provider: netlify
-    formspree:
-      id:
-    netlify:
-      # Enable CAPTCHA challenge to reduce spam?
-      captcha: false
-
-design:
-  columns: '2'
-
-# Map section
-map:
-  provider: 'mapnik'
-  zoom: 15
----
-
-# Page type
+date: 2024-09-24
 type: landing
 
-# Page sections
 sections:
   - block: contact
     content:
       title: Contact
       subtitle:
-      text: ''
-      # Contact details (edit or remove options as required)
+      text: |-
+        연락주세요!
+      # Contact (edit or remove options as required)
       email: nhj7804@jbnu.ac.kr
+      phone: 888 888 88 88
+      appointment_url: 'https://calendly.com'
       address:
         street: 백제대로
         city: 전주시
+        region: 전라북도
         postcode: '94305'
-      coordinates:
-        latitude: '35.84601324617979'
-        longitude: '127.13444961966684'
+        country: South Korea
+        country_code: KR
       directions: 512호
       office_hours:
         - 'Monday 10:00 to 13:00'
         - 'Wednesday 09:00 to 10:00'
-      appointment_url: 'https://calendly.com'
-      # Choose a map provider in `params.yaml` to show a map from these coordinates
-      coordinates:
-        latitude: '35.84601324617979'
-        longitude: '127.13444961966684'
       contact_links:
         - icon: twitter
           icon_pack: fab
           name: DM Me
           link: 'https://twitter.com/Twitter'
+      
+      # Map
+      coordinates:
+        latitude: '35.84601324617979'
+        longitude: '127.13444961966684'
+
+      # Automatically link email and phone or display as text?
+      autolink: true
+
+      # Email form provider
+      form:
+        provider: netlify
+        formspree:
+          id:
+        netlify:
+          # Enable CAPTCHA challenge to reduce spam?
+          captcha: false
+
     design:
-      columns: '2'
+      columns: '1'
+
+  - block: markdown
+    content:
+      title:
+      subtitle: ''
+      text:
+    design:
+      columns: '1'
+      background:
+        image: 
+          filename: contact.jpg
+          filters:
+            brightness: 1
+          parallax: false
+          position: center
+          size: cover
+          text_color_light: true
+      spacing:
+        padding: ['20px', '0', '20px', '0']
+      css_class: fullscreen
+  
+  - block: markdown
+    content:
+      title:
+      subtitle:
+      text: |
+        {{% cta cta_link="../../contact/" cta_text="연락하기" %}}
+    design:
+      columns: '1'
+
+# Map configuration
+features:
+  map:
+    provider: 'mapnik'
+    api_key: ''
+    zoom: 15
+---
