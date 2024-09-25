@@ -24,7 +24,7 @@ date_format: Jan 2006
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 item:
   - certificate_url: https://www.credly.com/badges/c3d3fbb6-f29c-4aa8-8333-1b526c9831c4/linked_in_profile
-    date_end: ''
+    date_end: '2024-09-01'
     date_start: '2024-09-01'
     description: ''
     organization: Amazon Web Seervices (AWS)
