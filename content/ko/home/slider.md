@@ -20,7 +20,7 @@ content:
       align: center
       background:
         image:
-          filename: container-orchestration.png
+          filename: images/container-orchestration.png
           filters:
             brightness: 0.4
         position: center
@@ -31,7 +31,7 @@ content:
       align: center
       background:
         image:
-          filename: Cloud.png
+          filename: images/Cloud.png
           filters:
             brightness: 0.4
         position: center
@@ -42,7 +42,7 @@ content:
       align: center
       background:
         image:
-          filename: network-virtualization.png
+          filename: images/network-virtualization.png
           filters:
             brightness: 0.4
         position: center
@@ -53,7 +53,7 @@ content:
       align: center
       background:
         image:
-          filename: DevOps.jpeg
+          filename: images/DevOps.jpeg
           filters:
             brightness: 0.4
         position: center
