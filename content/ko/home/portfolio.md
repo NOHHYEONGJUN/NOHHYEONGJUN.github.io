@@ -28,7 +28,7 @@ content:
   filter_button:
     - name: All
       tag: '*'
-    - name: Public Cloud
+    - name: Cloud
       tag: Cloud
     - name: Container Orchestration 
       tag: CO
@@ -45,4 +45,5 @@ design:
   flip_alt_rows: true
   background: {}
   spacing: {padding: [0, 0, 0, 0]}
+
 ---
