@@ -1,5 +1,5 @@
 ---
-title: Kubernets
+title: Kubernetes
 summary: kind / Ansible 
 tags:
   - CO

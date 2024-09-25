@@ -28,7 +28,7 @@ content:
   filter_button:
     - name: All
       tag: '*'
-    - name: Public Cloud
+    - name: Cloud
       tag: Cloud
     - name: Container Orchestration 
       tag: CO
