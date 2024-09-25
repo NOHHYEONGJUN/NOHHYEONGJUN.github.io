@@ -101,6 +101,8 @@ features:
     provider: 'mapnik'
     api_key: ''
     zoom: 15
+  media:
+    allow_img_cropping: true
 
 extensions:
   cms:

@@ -1,16 +1,11 @@
 ---
 # Slider section
 widget: slider
-weight: 30  # portfolio의 weight가 20이므로, 30으로 설정하여 그 아래에 위치하도록 합니다.
+weight: 30
 active: true
-headless: true  # This file represents a page section.
+headless: true
 
-# Slide interval.
-# Use `false` to disable animation or enter a time in ms, e.g. `5000` (5s).
 interval: 3000
-
-# Minimum slide height.
-# Specify a height to ensure a consistent height for each slide.
 height: '350px'
 
 content:
@@ -30,10 +25,12 @@ content:
       content: <span style="font-size:70%">AWS / OpenStack</span>
       align: center
       background:
-        image: "container-orchestration.png"
+        image:
+          filename: Cloud.jpg
+          filters:
+            brightness: 0.4
         position: center
         color: '#000'
-      overlay_filter: 0.4
 
     - title: <span style="font-size:70%">Network Virtualization</span>
       content: <span style="font-size:70%">Network / ONOS / OpenAirInterface</span>
@@ -63,4 +60,6 @@ design:
   is_fullscreen: false
   # Automatically transition through slides?
   loop: true
+  # Duration of transition between slides (in ms)
+  interval: 3000
 ---
