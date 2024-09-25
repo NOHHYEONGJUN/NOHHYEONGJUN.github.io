@@ -24,9 +24,6 @@ sections:
       columns: '2'
 
 map:
-  provider: 'mapnik'
-  api_key: ''
-  zoom: 15
   coordinates:
     latitude: '35.84601324617979'
     longitude: '127.13444961966684'
