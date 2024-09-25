@@ -31,6 +31,7 @@ item:
     organization_url: https://aws.amazon.com/ko/free/?gclid=EAIaIQobChMI1Y6685jdiAMVoW0PAh1tSRFWEAAYASAAEgKDjvD_BwE&trk=fa2d6ba3-df80-4d24-a453-bf30ad163af9&sc_channel=ps&ef_id=EAIaIQobChMI1Y6685jdiAMVoW0PAh1tSRFWEAAYASAAEgKDjvD_BwE:G:s&s_kwcid=AL!4422!3!563761819834!e!!g!!aws!15286221779!129400439466&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all
     title: AWS Certified Solutions Architect – Associate (SAA)
     url: ''
+    icon: aws.jpeg
   - certificate_url: https://www.credly.com/badges/8a8dfd73-61b1-49df-9015-3963724069ce/linked_in_profile
     date_end: ''
     date_start: '2024-01-01'
