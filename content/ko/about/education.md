@@ -25,23 +25,20 @@ experience:
   - title: Department of Computer and Artificial Intelligence
     company: Jeonbuk National University
     company_url: ''
-    company_logo: org-x
-    location: California
-    date_start: '2021-01-01'
-    date_end: '2022-01-01'
-    description: |2-
-        * Dissertation on Y
-        * Basketball team
-        * DJ club
+    company_logo: jbnu
+    location: Jeonju
+    date_start: '2020-03-02'
+    date_end: '2026-02-28'
+    description: ''
 
-  - title: BEng Electronic Engineering
-    company: University X
+  - title: Cloud Wave
+    company: CJ Olive Networks
     company_url: ''
-    company_logo: org-x
-    location: California
-    date_start: '2016-01-01'
-    date_end: '2020-12-31'
-    description: My dissertation was on X
+    company_logo: cj
+    location: Incheon Songdo
+    date_start: '2024-06-24'
+    date_end: '2024-08-31'
+    description: Cloud & Network
 
 design:
   columns: '1'
