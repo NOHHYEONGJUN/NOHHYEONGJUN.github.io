@@ -8,6 +8,8 @@ sections:
       title: "OpenAirInterface 기반<br> 5G TestBed 구축"
       subtitle: MEC
       text: |
+        <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+        
         # Efficient Data Processing<br> with MEC in 5G Networks
         ![Project Logo](5g-testbed.png)
 
@@ -84,4 +86,5 @@ sections:
 
         <br><br><br>
 
+        </div>
 ---
