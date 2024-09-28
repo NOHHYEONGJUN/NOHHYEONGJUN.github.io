@@ -8,15 +8,15 @@ sections:
       title: "OpenAirInterface 기반<br> 5G TestBed 구축"
       subtitle: MEC
       text: |
-        # Efficient Data Processing in 5G Networks
+        # Efficient Data Processing<br> with MEC in 5G Networks
         ![Project Logo](5g-testbed.png)
 
         <br><br><br>
 
         ## 프로젝트 소개
-        - **OpenAirInterface(OAI)**와 **USRP** 장치를 이용하여 AWS에서 제공되는 대규모 데이터를 **Multi-access Edge Computing(MEC)**에서 처리하는 연구
-        - **5G 네트워크**에서 대규모 트래픽을 처리하는 솔루션 개발 및 검증
-        - **AWS** 기반 서비스 데이터를 실시간으로 분석 및 처리, **Latency** 최적화 연구
+        - OpenAirInterface(OAI)와 USRP 장치를 이용하여 AWS에서 제공되는 대규모 데이터를 Multi-access Edge Computing(MEC)에서 처리하는 연구
+        - 5G 네트워크에서 대규모 트래픽을 처리하는 솔루션 개발 및 검증
+        - AWS 기반 서비스 데이터를 실시간으로 분석 및 처리, Latency 최적화 연구
 
         <br><br>
 
@@ -67,18 +67,20 @@ sections:
         - Private Cloud 환경에서 대규모 트래픽에 대응 가능한 **네트워크 확장성** 제공
         - **ML 기반 최적화** 알고리즘을 통한 트래픽 처리 효율 향상
 
+        <br><br><br>
+
         ## 4. OpenAirInterface5G Architecture
         ![oai](oai.png)
 
         <br><br><br>
 
         ## 5. Point Use Stack
-        ![OAI Stack](stack.png)
+        ![OAI Stack](stack.jpg)
 
         <br><br><br>
 
         ## 6. OpenStack
-        ![OpenStack](oepnstack.png)
+        ![OpenStack](openstack.png)
 
         <br><br><br>
 
