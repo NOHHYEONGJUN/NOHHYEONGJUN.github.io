@@ -6,7 +6,7 @@ sections:
   - block: markdown
     content:
       title: "대규모 트래픽 대응<br> 라이브 스트리밍 인프라 구축"
-      subtitle: My subtitle
+      subtitle: AWS
       text: |
         # OliveYoung Live Commerce 
         ![Project Logo](Project-Logo.png)
