@@ -6,8 +6,66 @@ sections:
   - block: markdown
     content:
       title: 네트워크 가상화
-      subtitle: NFV & MEC
+      subtitle: ''
       text: |
+        # NFV & MEC
+
+        widget: slider
+        weight: 30
+        active: true
+        headless: true
+
+        interval: 3000
+        height: '350px'
+
+        content:
+          slides:
+            - title: <span style="font-size:70%">Network Function Virtualization</span>
+              content: <span style="font-size:70%">NFV</span>
+              align: center
+              background:
+                media: NFV(unsplash).png
+                brightness: 0.4
+                position: center
+                color: '#000'
+
+            - title: <span style="font-size:70%">Software-Defined Networking</span>
+              content: <span style="font-size:70%">SDN</span>
+              align: center
+              background:
+                media: SDN(unsplash).jpg
+                brightness: 0.4
+                position: center
+                color: '#000'
+
+            - title: <span style="font-size:70%">Virtual Network Functions</span>
+              content: <span style="font-size:70%">VNF</span>
+              align: center
+              background:
+                media: VNF(unspalsh).png
+                brightness: 0.4
+                position: center
+                color: '#000'
+
+            - title: <span style="font-size:70%">Multi-access Edge Computing</span>
+              content: <span style="font-size:70%">MEC / Cloud</span>
+              align: center
+              background:
+                media: cloud(unsplash).png
+                brightness: 0.4
+                position: center
+                color: '#000'
+
+        design:
+          # Slide height is automatic unless you force a specific height (e.g. '400px')
+          slide_height: '500px'
+          is_fullscreen: false
+          # Automatically transition through slides?
+          loop: true
+          # Duration of transition between slides (in ms)
+          interval: 3000
+
+
         <br><br><br>
 
         ## 소개
@@ -40,6 +98,7 @@ sections:
 
           <br><br><br>
 
+        ## 2. 기술 필요성
         1. **유연성 향상**
           - 동적 리소스 할당
           - 서비스 배포 시간 단축
@@ -70,6 +129,8 @@ sections:
         - **증강/가상 현실**: 몰입형 게임, 원격 협업
         - **자율 주행**: 차량 간 통신, 실시간 경로 최적화
         - **헬스케어**: 원격 진료, 실시간 환자 모니터링
+
+        <br><br><br>
 
         ## 4. 기술 아키텍처
         ![NV and MEC Architecture](nv-mec-tech-architecture.png)
