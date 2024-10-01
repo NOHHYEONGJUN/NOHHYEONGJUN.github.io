@@ -8,8 +8,6 @@ sections:
       title: 네트워크 가상화
       text: |
         # NFV & MEC
-        <br><br>
-
 
   - block: slider
     content:
@@ -61,9 +59,6 @@ sections:
       title: ''
       subtitle: ''
       text: |
-        
-        <br><br><br>
-
         ## 소개
         네트워크 가상화와 멀티 액세스 엣지 컴퓨팅(MEC)은 현대 네트워크 인프라의 핵심 요소로, 더 유연하고 효율적이며 지능적인 네트워크 구축을 가능하게 합니다.
 
