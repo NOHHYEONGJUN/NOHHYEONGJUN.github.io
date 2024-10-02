@@ -85,6 +85,8 @@ sections:
         - 환경 간 중복 리소스 공유
         - 썸네일을 사용한 Rekognize로 1/25 수준 비용 절감
 
+        <br><br><br>
+
         ## 4. 전체 아키텍처
         ![Main Architecture](main-archi.png)
 

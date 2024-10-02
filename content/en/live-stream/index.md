@@ -85,6 +85,8 @@ sections:
         - Shared resources between environments
         - Cost reduction to 1/25 level using thumbnails for Rekognize
 
+        <br><br><br>
+
         ## 4. Overall Architecture
         ![Main Architecture](main-archi.png)
 
