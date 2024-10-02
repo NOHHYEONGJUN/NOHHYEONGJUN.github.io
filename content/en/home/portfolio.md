@@ -40,8 +40,8 @@ content:
 design:
   columns: '1'
   view: custom
-  custom_view: custom_card_small
-  flip_alt_rows: true
+  custom:
+    - name: custom_card_small
   background: {}
   spacing: {padding: [0, 0, "120px", 0]}
 ---
