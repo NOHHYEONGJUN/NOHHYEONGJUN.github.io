@@ -1,0 +1,53 @@
+{{ $ := .root }}
+{{ $page := .page }}
+
+<div id="portfolio-wrapper">
+  <div id="filter-buttons" class="mb-4">
+    {{ range $idx, $item := $page.Params.content.filter_button }}
+      <button class="btn btn-primary btn-lg{{ if eq $idx $page.Params.content.filter_default }} active{{ end }}" data-filter="{{ .tag }}">{{ .name }}</button>
+    {{ end }}
+  </div>
+
+  <div id="default-view">
+    {{ partial "widgets/portfolio/default_view" (dict "page" $page) }}
+  </div>
+
+  <div id="filtered-view" style="display: none;">
+    {{ partial "widgets/portfolio/filtered_view" (dict "page" $page) }}
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const filterButtons = document.querySelectorAll('#filter-buttons .btn');
+  const defaultView = document.getElementById('default-view');
+  const filteredView = document.getElementById('filtered-view');
+  const projects = document.querySelectorAll('.project-item');
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click', (e) => {
+      const filter = button.getAttribute('data-filter');
+
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      if (filter === '*') {
+        defaultView.style.display = 'block';
+        filteredView.style.display = 'none';
+      } else {
+        defaultView.style.display = 'none';
+        filteredView.style.display = 'block';
+      }
+
+      projects.forEach(project => {
+        const tags = project.getAttribute('data-tags').split(' ');
+        if (filter === '*' || tags.includes(filter)) {
+          project.style.display = '';
+        } else {
+          project.style.display = 'none';
+        }
+      });
+    });
+  });
+});
+</script>
