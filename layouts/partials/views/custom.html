@@ -19,9 +19,20 @@
         </div>
         <div style="width: 70%;">
           <div style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; background-color: #2d3748; height: 100%;">
-            {{ $image := .Resources.GetMatch "featured.jpg" }}
+            {{ $image := "" }}
+            {{ $imageJPG := .Resources.GetMatch "featured.jpg" }}
+            {{ $imagePNG := .Resources.GetMatch "featured.png" }}
+            {{ if $imageJPG }}
+              {{ $image = $imageJPG }}
+            {{ else if $imagePNG }}
+              {{ $image = $imagePNG }}
+            {{ end }}
             {{ with $image }}
               <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" style="width: 100%; height: 200px; object-fit: cover;">
+            {{ else }}
+              <div style="width: 100%; height: 200px; background-color: #4a5568; display: flex; align-items: center; justify-content: center;">
+                <span style="color: #a0aec0; font-size: 1.2em;">No Image Available</span>
+              </div>
             {{ end }}
             <div style="padding: 20px;">
               <h3 style="font-size: 1.5em; margin-top: 0; color: white;">{{ .Title }}</h3>

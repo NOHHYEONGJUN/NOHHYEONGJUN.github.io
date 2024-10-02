@@ -1,77 +1,32 @@
-{{ $page := .page }}
+---
+title: Learning Hub
+type: widget_page
+headless: true
 
-<div id="portfolio-wrapper" style="width: 100%; max-width: 1200px; margin: 0 auto;">
-  <h1 style="font-size: 3em; text-align: center; margin-bottom: 20px;">{{ with $page.Title }}{{ . | markdownify | emojify }}{{ end }}</h1>
-  <p style="text-align: center; font-size: 1.2em; margin-bottom: 30px;">{{ with $page.Params.subtitle }}{{ . | markdownify | emojify }}{{ end }}</p>
+widget: portfolio
+headless: true
+weight: 10
 
-  <div id="filter-buttons" style="margin-bottom: 30px; text-align: center;">
-    {{ range $idx, $item := $page.Params.content.filter_button }}
-      <button class="btn btn-primary btn-lg{{ if eq $idx 0 }} active{{ end }}" data-filter="{{ .tag }}" style="margin-right: 10px; margin-bottom: 10px;">{{ .name }}</button>
-    {{ end }}
-  </div>
+title: "Learning Hub"
+subtitle: "나의 학습 프로젝트"
 
-  <div id="projects-container">
-    {{ $projects := where site.RegularPages "Type" ($page.Params.content.page_type | default "project") }}
-    {{ range $projects }}
-      <div class="project-row" data-tags="{{ delimit .Params.tags " " }}" style="display: flex; margin-bottom: 30px; align-items: stretch;">
-        <div style="width: 30%; padding-right: 20px; display: flex; align-items: center;">
-          <h2 style="font-size: 2em; margin: 0;">{{ .Title }}</h2>
-        </div>
-        <div style="width: 70%;">
-          <div style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; background-color: #2d3748; height: 100%;">
-            {{ $image := "" }}
-            {{ $imageJPG := .Resources.GetMatch "featured.jpg" }}
-            {{ $imagePNG := .Resources.GetMatch "featured.png" }}
-            {{ if $imageJPG }}
-              {{ $image = $imageJPG }}
-            {{ else if $imagePNG }}
-              {{ $image = $imagePNG }}
-            {{ end }}
-            {{ with $image }}
-              <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" style="width: 100%; height: 200px; object-fit: cover;">
-            {{ else }}
-              <div style="width: 100%; height: 200px; background-color: #4a5568; display: flex; align-items: center; justify-content: center;">
-                <span style="color: #a0aec0; font-size: 1.2em;">No Image Available</span>
-              </div>
-            {{ end }}
-            <div style="padding: 20px;">
-              <h3 style="font-size: 1.5em; margin-top: 0; color: white;">{{ .Title }}</h3>
-              <p style="font-size: 1em; color: #a0aec0;">{{ with .Params.summary }}{{ . | markdownify | emojify }}{{ end }}</p>
-              <div style="margin-top: 10px;">
-                {{ range .Params.tags }}
-                  <span style="display: inline-block; background-color: #4a5568; color: white; padding: 2px 5px; margin-right: 5px; margin-bottom: 5px; border-radius: 3px; font-size: 0.9em;">{{ . }}</span>
-                {{ end }}
-              </div>
-              <a href="{{ .RelPermalink }}" style="display: inline-block; margin-top: 10px; padding: 8px 15px; background-color: #4299e1; color: white; text-decoration: none; border-radius: 4px; font-size: 1em;">자세히 보기</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    {{ end }}
-  </div>
-</div>
+content:
+  page_type: project
+  filter_default: 0
+  filter_button:
+    - name: All
+      tag: '*'
+    - name: Cloud
+      tag: Cloud
+    - name: Container Orchestration 
+      tag: CO
+    - name: Network Virtualization
+      tag: NV
+    - name: DevOps & Automation
+      tag: CICD
 
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  const filterButtons = document.querySelectorAll('#filter-buttons .btn');
-  const projects = document.querySelectorAll('.project-row');
-
-  filterButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      const filter = button.getAttribute('data-filter');
-
-      filterButtons.forEach(btn => btn.classList.remove('active'));
-      button.classList.add('active');
-
-      projects.forEach(project => {
-        const tags = project.getAttribute('data-tags').split(' ');
-        if (filter === '*' || tags.includes(filter)) {
-          project.style.display = 'flex';
-        } else {
-          project.style.display = 'none';
-        }
-      });
-    });
-  });
-});
-</script>
+design:
+  columns: '1'
+  view: custom
+  flip_alt_rows: false
+---
