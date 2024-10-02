@@ -11,9 +11,9 @@ content:
 
 design:
   columns: '1'
-  view: custom_card_small
-  flip_alt_rows: false
+  view: card
+  card_view_layout: custom_card_small
+  flip_alt_rows: true
   background: {}
-  spacing:
-    padding: ["20px", "0", "20px", "0"]
+  spacing: {padding: [0, 0, "120px", 0]}
 ---
