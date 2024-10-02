@@ -6,15 +6,16 @@ sections:
   - block: markdown
     content:
       title: "Large-scale Traffic Handling<br> Live Streaming Infrastructure Development"
-      subtitle: AWS
+      subtitle: AWS 
       text: |
         # OliveYoung Live Commerce 
         ![Project Logo](Project-Logo.png)
         - Access URL: https://www.olcl.shop
         - Test ID: user1 / CloudWave!
+
         
         <br><br><br>
-
+         
         ## Project Introduction
         - **Multi-channel** live service providing 3 or more live channels
         - **Stable** live service through cloud-based traffic handling
