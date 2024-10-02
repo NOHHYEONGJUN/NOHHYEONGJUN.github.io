@@ -1,37 +1,39 @@
 ---
 widget: portfolio
 headless: true
-weight: 30
-title: 프로젝트
-subtitle: ''
+weight: 10
+
+title: Learning Hub
+subtitle: '나의 학습 프로젝트'
 
 content:
   page_type: project
   filter_default: 0
+
   filter_button:
-    - name: 전체
+    - name: All
       tag: '*'
-    - name: 클라우드
+    - name: Cloud
       tag: Cloud
-    - name: 컨테이너 오케스트레이션
+    - name: Container Orchestration 
       tag: CO
-    - name: 네트워크 가상화
+    - name: Network Virtualization
       tag: NV
-    - name: DevOps & 자동화
+    - name: DevOps & Automation
       tag: CICD
 
 design:
   columns: '1'
-  view: custom
+  view: card
   flip_alt_rows: false
-
-advanced:
-  css_style: ""
-  css_class: ""
+  background:
+    color: "white"
+  spacing:
+    padding: ["20px", "0", "20px", "0"]
 ---
 
-{{< portfolio_card >}}
+{{ partial "widgets/portfolio/card" . }}
 
 <h2 style="margin-top: 40px;">프로젝트 목록</h2>
 
-{{< portfolio_list >}}
+{{ partial "widgets/portfolio/list" . }}
