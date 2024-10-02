@@ -37,7 +37,7 @@ main:
     url: cloud/
     weight: 42
   - name: Learning Hub
-    url: LearningHub/
+    url: learninghub/
     weight: 50
   - name: Contact
     url: contact/
