@@ -1,52 +1,78 @@
-{{ $ := .root }}
+{{ $item := .item }}
+{{ $view := .view }}
 {{ $page := .page }}
 
-<div id="portfolio-wrapper">
-  <div id="filter-buttons" class="mb-4">
-    {{ range $idx, $item := $page.Params.content.filter_button }}
-      <button class="btn btn-primary btn-lg{{ if eq $idx $page.Params.content.filter_default }} active{{ end }}" data-filter="{{ .tag }}">{{ .name }}</button>
+<div id="portfolio-wrapper" style="width: 100%;">
+  <div id="filter-buttons" style="margin-bottom: 20px;">
+    {{ range $idx, $item := site.Params.content.filter_button }}
+      <button class="btn btn-primary btn-lg{{ if eq $idx 0 }} active{{ end }}" data-filter="{{ .tag }}" style="margin-right: 10px;">{{ .name }}</button>
     {{ end }}
   </div>
 
-  <div id="default-view">
-    {{ partial "widgets/portfolio/default_view" (dict "page" $page) }}
-  </div>
-
-  <div id="filtered-view" style="display: none;">
-    {{ partial "widgets/portfolio/filtered_view" (dict "page" $page) }}
+  <div class="row">
+    <div class="col-12 col-lg-3 section-heading" id="section-heading" style="transition: width 0.3s ease;">
+      <h1 style="font-size: 1.5em; transition: font-size 0.3s ease;">{{ with $page.Title }}{{ . | markdownify | emojify }}{{ end }}</h1>
+      {{ with $page.Params.subtitle }}<p>{{ . | markdownify | emojify }}</p>{{ end }}
+    </div>
+    <div class="col-12 col-lg-9">
+      <div class="row isotope projects-container" id="projects-container">
+        {{ range where site.RegularPages "Type" ($page.Params.content.page_type | default "project") }}
+          <div class="col-lg-4 project-item isotope-item {{ delimit .Params.tags " " }}" data-tags="{{ delimit .Params.tags " " }}" style="margin-bottom: 20px;">
+            <div style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden;">
+              {{ with .Params.image }}
+              <img src="{{ . | relURL }}" alt="{{ $.Title }}" style="width: 100%; height: 200px; object-fit: cover;">
+              {{ end }}
+              <div style="padding: 15px;">
+                <h5 style="font-size: 1.2em; transition: font-size 0.3s ease;">{{ .Title }}</h5>
+                <p>{{ with .Params.summary }}{{ . | markdownify | emojify }}{{ end }}</p>
+                <div class="project-tags" style="margin-top: 10px;">
+                  {{ range .Params.tags }}
+                    <span style="display: inline-block; background-color: #f0f0f0; padding: 2px 5px; margin-right: 5px; border-radius: 3px; font-size: 0.8em;">{{ . }}</span>
+                  {{ end }}
+                </div>
+                <a href="{{ .RelPermalink }}" style="display: inline-block; margin-top: 10px; padding: 5px 10px; background-color: #007bff; color: white; text-decoration: none; border-radius: 4px;">자세히 보기</a>
+              </div>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
   </div>
 </div>
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {
   const filterButtons = document.querySelectorAll('#filter-buttons .btn');
-  const defaultView = document.getElementById('default-view');
-  const filteredView = document.getElementById('filtered-view');
   const projects = document.querySelectorAll('.project-item');
+  const sectionHeading = document.getElementById('section-heading');
+  const projectsContainer = document.getElementById('projects-container');
 
   filterButtons.forEach(button => {
-    button.addEventListener('click', (e) => {
+    button.addEventListener('click', () => {
       const filter = button.getAttribute('data-filter');
 
       filterButtons.forEach(btn => btn.classList.remove('active'));
       button.classList.add('active');
 
-      if (filter === '*') {
-        defaultView.style.display = 'block';
-        filteredView.style.display = 'none';
-      } else {
-        defaultView.style.display = 'none';
-        filteredView.style.display = 'block';
-      }
-
       projects.forEach(project => {
         const tags = project.getAttribute('data-tags').split(' ');
         if (filter === '*' || tags.includes(filter)) {
           project.style.display = '';
+          project.querySelector('h5').style.fontSize = filter === '*' ? '1.2em' : '1.5em';
         } else {
           project.style.display = 'none';
         }
       });
+
+      if (filter === '*') {
+        sectionHeading.style.width = '25%';
+        sectionHeading.querySelector('h1').style.fontSize = '1.5em';
+        projectsContainer.style.width = '75%';
+      } else {
+        sectionHeading.style.width = '100%';
+        sectionHeading.querySelector('h1').style.fontSize = '2.5em';
+        projectsContainer.style.width = '100%';
+      }
     });
   });
 });

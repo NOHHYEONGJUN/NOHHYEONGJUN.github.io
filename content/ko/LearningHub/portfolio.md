@@ -4,7 +4,6 @@ type: widget_page
 
 widget: portfolio
 headless: true
-active: true
 weight: 10
 
 title: "Learning Hub"
@@ -29,8 +28,4 @@ design:
   columns: '1'
   view: custom
   flip_alt_rows: false
-
-advanced:
-  css_style: ""
-  css_class: ""
 ---
