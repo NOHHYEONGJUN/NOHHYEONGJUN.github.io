@@ -1,0 +1,37 @@
+{{/* Div wrapper for entire content. */}}
+<div class="article-metadata" style="max-width: 30%; display: inline-block; vertical-align: top; margin: 0 1.5% 20px 1.5%;">
+
+  {{/* Featured image */}}
+  {{ if and .Params.image .Params.image.preview_only }}
+    {{ .Scratch.Set "image" (.Params.image.src) }}
+  {{ else if .Params.image }}
+    {{ .Scratch.Set "image" .Params.image }}
+  {{ end }}
+  {{ $image := .Scratch.Get "image" }}
+  {{ if $image }}
+    {{ $image_src := resources.GetMatch $image }}
+    {{ if $image_src }}
+      {{ $image_src = $image_src.Fit "600x400" }}
+    {{ end }}
+    {{ if $image_src }}
+      <div class="article-header">
+        <img src="{{ $image_src.RelPermalink }}" width="100%" alt="{{ .Title }}" class="article-banner" style="height: 150px; object-fit: cover;">
+      </div>
+    {{ end }}
+  {{ end }}
+
+  <h3 class="article-title mb-1 mt-3" style="font-size: 1rem;">
+    <a href="{{ .RelPermalink }}" style="color: inherit;">{{ .Title }}</a>
+  </h3>
+
+  {{ with .Params.summary }}
+  <div class="article-style" style="font-size: 0.8rem;">
+    {{ . | truncate 120 }}
+  </div>
+  {{ end }}
+
+  <div class="btn-links" style="margin-top: 10px;">
+    {{ partial "page_links" (dict "page" . "is_list" 1) }}
+  </div>
+
+</div>
