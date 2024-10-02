@@ -39,7 +39,7 @@ content:
 
 design:
   columns: '1'
-  view: card
+  view: custom_card_small
   flip_alt_rows: false
   background: {}
   spacing: {padding: [0, 0, "120px", 0]}
