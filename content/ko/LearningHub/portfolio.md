@@ -1,39 +1,176 @@
 ---
-widget: portfolio
-headless: true
-weight: 10
-
 title: Learning Hub
-subtitle: '나의 학습 프로젝트'
-
-content:
-  page_type: project
-  filter_default: 0
-
-  filter_button:
-    - name: All
-      tag: '*'
-    - name: Cloud
-      tag: Cloud
-    - name: Container Orchestration 
-      tag: CO
-    - name: Network Virtualization
-      tag: NV
-    - name: DevOps & Automation
-      tag: CICD
-
-design:
-  columns: '1'
-  view: card
-  flip_alt_rows: false
-  background:
-    color: "white"
-  spacing:
-    padding: ["20px", "0", "20px", "0"]
+type: widget_page
 ---
 
-{{ partial "widgets/portfolio/card" . }}
++++
+# Card view
+widget = "portfolio"
+headless = true  # This file represents a page section.
+active = true  # Activate this widget? true/false
+weight = 10  # Order that this section will appear.
 
-<h2 style="margin-top: 40px;">프로젝트 목록</h2>
+title = "Learning Hub"
+subtitle = "나의 학습 프로젝트"
 
-{{ partial "widgets/portfolio/list" . }}
+[content]
+  # Page type to display. E.g. project.
+  page_type = "project"
+  
+  # Filter toolbar (optional).
+  # Add or remove as many filters (`[[content.filter_button]]` instances) as you like.
+  # To show all items, set `tag` to "*".
+  # To filter by a specific tag, set `tag` to an existing tag name.
+  # To remove toolbar, delete/comment all instances of `[[content.filter_button]]` below.
+  
+  # Default filter index (e.g. 0 corresponds to the first `[[filter_button]]` instance below).
+  filter_default = 0
+  
+  [[content.filter_button]]
+    name = "All"
+    tag = "*"
+  
+  [[content.filter_button]]
+    name = "Cloud"
+    tag = "Cloud"
+  
+  [[content.filter_button]]
+    name = "Container Orchestration"
+    tag = "CO"
+  
+  [[content.filter_button]]
+    name = "Network Virtualization"
+    tag = "NV"
+  
+  [[content.filter_button]]
+    name = "DevOps & Automation"
+    tag = "CICD"
+
+[design]
+  # Choose how many columns the section has. Valid values: 1 or 2.
+  columns = "1"
+
+  # Toggle between the various page layout types.
+  #   1 = List
+  #   2 = Compact
+  #   3 = Card
+  #   5 = Showcase
+  view = 3
+
+  # For Showcase view, flip alternate rows?
+  flip_alt_rows = false
+
+[design.background]
+  # Apply a background color, gradient, or image.
+  #   Uncomment (by removing `#`) an option to apply it.
+  #   Choose a light or dark text color by setting `text_color_light`.
+  #   Any HTML color name or Hex value is valid.
+  
+  # Background color.
+  color = "white"
+  
+  # Background gradient.
+  # gradient_start = "DeepSkyBlue"
+  # gradient_end = "SkyBlue"
+  
+  # Background image.
+  # image = "background.jpg"  # Name of image in `static/media/`.
+  # image_darken = 0.6  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
+
+  # Text color (true=light or false=dark).
+  # text_color_light = true  
+
+[advanced]
+ # Custom CSS. 
+ css_style = ""
+ 
+ # CSS class.
+ css_class = ""
+
++++
+
++++
+# List view
+widget = "portfolio"
+headless = true  # This file represents a page section.
+active = true  # Activate this widget? true/false
+weight = 20  # Order that this section will appear.
+
+title = "프로젝트 목록"
+subtitle = ""
+
+[content]
+  # Page type to display. E.g. project.
+  page_type = "project"
+  
+  # Filter toolbar (optional).
+  # Add or remove as many filters (`[[content.filter_button]]` instances) as you like.
+  # To show all items, set `tag` to "*".
+  # To filter by a specific tag, set `tag` to an existing tag name.
+  # To remove toolbar, delete/comment all instances of `[[content.filter_button]]` below.
+  
+  # Default filter index (e.g. 0 corresponds to the first `[[filter_button]]` instance below).
+  filter_default = 0
+  
+  [[content.filter_button]]
+    name = "All"
+    tag = "*"
+  
+  [[content.filter_button]]
+    name = "Cloud"
+    tag = "Cloud"
+  
+  [[content.filter_button]]
+    name = "Container Orchestration"
+    tag = "CO"
+  
+  [[content.filter_button]]
+    name = "Network Virtualization"
+    tag = "NV"
+  
+  [[content.filter_button]]
+    name = "DevOps & Automation"
+    tag = "CICD"
+
+[design]
+  # Choose how many columns the section has. Valid values: 1 or 2.
+  columns = "2"
+
+  # Toggle between the various page layout types.
+  #   1 = List
+  #   2 = Compact
+  #   3 = Card
+  #   5 = Showcase
+  view = 1
+
+  # For Showcase view, flip alternate rows?
+  flip_alt_rows = false
+
+[design.background]
+  # Apply a background color, gradient, or image.
+  #   Uncomment (by removing `#`) an option to apply it.
+  #   Choose a light or dark text color by setting `text_color_light`.
+  #   Any HTML color name or Hex value is valid.
+  
+  # Background color.
+  color = "white"
+  
+  # Background gradient.
+  # gradient_start = "DeepSkyBlue"
+  # gradient_end = "SkyBlue"
+  
+  # Background image.
+  # image = "background.jpg"  # Name of image in `static/media/`.
+  # image_darken = 0.6  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
+
+  # Text color (true=light or false=dark).
+  # text_color_light = true  
+
+[advanced]
+ # Custom CSS. 
+ css_style = ""
+ 
+ # CSS class.
+ css_class = ""
+
++++
