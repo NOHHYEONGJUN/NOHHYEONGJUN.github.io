@@ -1,5 +1,5 @@
 ---
-title: Learning Hub
+title: LearningHub
 type: landing
 
 sections:
