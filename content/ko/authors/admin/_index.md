@@ -1,12 +1,12 @@
 ---
 # Display name
-title: NOH HYEONGJUN
+title: 노형준 (NOH HYEONGJUN)
 
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position
-role: ''
+role: '전북대학교 컴퓨터인공지능학부 학생'
 
 # Status emoji
 status:
@@ -18,7 +18,7 @@ status:
 #  url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: 전북대학교 컴퓨터인공지능학부에서 네트워크 가상화 및 클라우드 컴퓨팅을 공부하고 있습니다.
 
 #interests:
 #- Artificial Intelligence
@@ -76,10 +76,10 @@ social:
 - 네트워크 서비스 및 컴퓨팅 연구실 (NSCL)
 
 ### <i class="fas fa-laptop-code"></i> 관심 분야
-- Network Function Virtualization (NFV)
-- Multi-access Edge Computing (MEC)
-- Public Cloud (AWS)
-- Container Orchestration (K8S, OpenStack)
+- 네트워크 기능 가상화 (NFV)
+- 멀티액세스 엣지 컴퓨팅 (MEC)
+- 퍼블릭 클라우드 (AWS)
+- 컨테이너 오케스트레이션 (K8S, OpenStack)
 - CI/CD (GitLab, Jenkins, Harbor, ArgoCD, SonarQube)
 
 

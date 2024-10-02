@@ -17,8 +17,8 @@ marketing:
   seo:
     site_type: Person
     local_business_type: ''
-    org_name: 'Portfolio'
-    description: 'A highly-customizable Hugo blog theme powered by Wowchemy website builder.'
+    org_name: '전북대학교 노형준의 포트폴리오'
+    description: '전북대학교 컴퓨터인공지능학부 노형준의 연구 및 프로젝트 포트폴리오'
     twitter: 'GetResearchDev'
   analytics:
     google_analytics: ''

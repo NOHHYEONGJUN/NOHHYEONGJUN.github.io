@@ -1,12 +1,12 @@
 ---
 # Display name
-title: NOH HYEONGJUN
+title: 노형준 (NOH HYEONGJUN)
 
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position
-role: ''
+role: '전북대학교 컴퓨터인공지능학부 학생'
 
 # Status emoji
 status:
@@ -18,7 +18,7 @@ status:
 #  url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: 전북대학교 컴퓨터인공지능학부에서 네트워크 가상화 및 클라우드 컴퓨팅을 공부하고 있습니다.
 
 #interests:
 #- Artificial Intelligence
