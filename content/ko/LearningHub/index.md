@@ -1,38 +1,31 @@
 ---
-title: Learning Hub
-type: landing
+widget: portfolio
+headless: true
+weight: 10
 
-sections:
-  - block: portfolio
-    content:
-      title: Learning Hub
-      subtitle: 'Explore my learning journey and projects'
-      text: ''
-      # Page type to display. E.g. project.
-      page_type: project
-      # Default filter index (e.g. 0 corresponds to the first `filter_button` instance below).
-      filter_default: 0
-      # Filter toolbar (optional).
-      # Add or remove as many filters (`filter_button` instances) as you like.
-      # To show all items, set `tag` to "*".
-      # To filter by a specific tag, set `tag` to an existing tag name.
-      filter_button:
-        - name: All
-          tag: '*'
-        - name: Cloud
-          tag: Cloud
-        - name: Container Orchestration 
-          tag: CO
-        - name: Network Virtualization
-          tag: NV
-        - name: DevOps & Automation
-          tag: CICD
-          
-  design:
-    columns: '1'
-    view: card
-    card_view_layout: small_image
-    flip_alt_rows: true
-    background: {}
-    spacing: {padding: [0, 0, "120px", 0]}
+title: 'Learning Hub'
+subtitle: '나의 학습 여정'
+
+content:
+  page_type: project
+  filter_default: 0
+
+  filter_button:
+    - name: 전체
+      tag: '*'
+    - name: 클라우드
+      tag: Cloud
+    - name: 컨테이너 오케스트레이션
+      tag: CO
+    - name: 네트워크 가상화
+      tag: NV
+    - name: DevOps & 자동화
+      tag: CICD
+
+design:
+  columns: '1'
+  view: card
+  flip_alt_rows: false
+  background: {}
+  spacing: {padding: [0, 0, "120px", 0]}
 ---
