@@ -1,0 +1,21 @@
+{{ $item := .item }}
+{{ $has_attachments := partial "functions/has_attachments" $item }}
+
+<div class="card">
+  <div class="row no-gutters">
+    {{ with $item.Params.image }}
+    <div class="col-md-4">
+      <img src="{{ . }}" alt="{{ $item.Title }}" class="card-img">
+    </div>
+    {{ end }}
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{ $item.Title }}</h5>
+        {{ with $item.Params.summary }}
+        <p class="card-text">{{ . | markdownify | emojify }}</p>
+        {{ end }}
+        {{ partial "page_metadata" (dict "page" $item "is_list" 1) }}
+      </div>
+    </div>
+  </div>
+</div>

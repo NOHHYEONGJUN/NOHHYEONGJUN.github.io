@@ -39,9 +39,14 @@ content:
 
 design:
   columns: '1'
-  view: card
-  card_view_layout: small_image
+  view: custom  # Changed from 'card' to 'custom'
   flip_alt_rows: true
   background: {}
   spacing: {padding: [0, 0, "120px", 0]}
+  # Custom view settings
+  custom_view:
+    - name: custom_card_large
+      items: 1
+    - name: custom_card_small
+      items: 3
 ---
