@@ -1,43 +1,27 @@
-{{/* Div wrapper for entire content. */}}
-<div class="article-metadata" style="width: 31%; display: inline-block; vertical-align: top; margin: 0 1% 20px 1%;">
-
-  {{/* Featured image */}}
-  {{ $image := "" }}
-  {{ $has_attachments := partial "functions/has_attachments" . }}
-  {{ with $has_attachments }}
-    {{ $image = $.Resources.GetMatch (printf "%s*" .File.ContentBaseName) }}
-  {{ end }}
-  {{ if not $image }}
-    {{ $image = resources.GetMatch (printf "featured.*") }}
-  {{ end }}
-
-  {{ if $image }}
-    {{ $image_shape := "" }}
-    {{ with .Params.image.shape }}
-      {{ if eq . "rounded" }}
-        {{ $image_shape = "rounded" }}
-      {{ else if eq . "circle" }}
-        {{ $image_shape = "rounded-circle" }}
+<div class="card-simple project-card" style="width: 30%; display: inline-block; vertical-align: top; margin: 0 1.5% 20px 1.5%;">
+    {{ if .Params.image }}
+      {{ $image := resources.GetMatch .Params.image }}
+      {{ if $image }}
+        {{ $image := $image.Fit "600x400" }}
+        <div class="img-hover-zoom">
+          <img src="{{ $image.RelPermalink }}" class="article-banner" alt="{{ .Title }}" style="height: 150px; width: 100%; object-fit: cover;">
+        </div>
       {{ end }}
     {{ end }}
-    {{ $image = $image.Fill "600x400 smart" }}
-    <div class="article-header">
-      <img src="{{ $image.RelPermalink }}" width="100%" alt="{{ .Title }}" class="article-banner {{ $image_shape }}" style="height: 150px; object-fit: cover;">
+  
+    <div class="article-metadata" style="padding: 15px;">
+      <h3 class="article-title mb-0 mt-0" style="font-size: 1rem;">
+        <a href="{{ .RelPermalink }}" {{ if site.Params.link_destination }}target="_blank"{{ end }}>{{ .Title }}</a>
+      </h3>
+  
+      {{ with .Params.summary }}
+      <div class="article-style" style="font-size: 0.8rem; margin-top: 10px;">
+        {{ . | plainify | truncate 100 }}
+      </div>
+      {{ end }}
+  
+      <div class="btn-links" style="margin-top: 10px;">
+        {{ partial "page_links" (dict "page" . "is_list" 1) }}
+      </div>
     </div>
-  {{ end }}
-
-  <h3 class="article-title mb-1 mt-3" style="font-size: 1rem;">
-    <a href="{{ .RelPermalink }}" {{ if site.Params.link_destination }}target="_blank"{{ end }}>{{ .Title }}</a>
-  </h3>
-
-  {{ with .Params.summary }}
-  <div class="article-style" style="font-size: 0.8rem;">
-    {{ . | truncate 120 }}
   </div>
-  {{ end }}
-
-  <div class="btn-links">
-    {{ partial "page_links" (dict "page" . "is_list" 1) }}
-  </div>
-
-</div>
