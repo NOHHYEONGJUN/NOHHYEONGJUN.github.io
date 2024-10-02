@@ -1,35 +1,38 @@
 ---
-title: Learning Hub 
-date: 2024-09-24
+title: Learning Hub
 type: landing
-sections:
-  - block: contact
-    content:
-      title: Contact
-      subtitle: '' 
-      text: '' 
-      contact_links:
-        - icon: google
-          icon_pack: fab
-          name: nhj7804@jbnu.ac.kr
-          link: 'mailto:nhj7804@jbnu.ac.kr'
-        - icon: whatsapp
-          icon_pack: fab
-          name: 010-2485-7804
-          link: 'tel:010-2485-7804'
-        - icon: map-marked-alt
-          icon_pack: fas 
-          name: Room 512, No. 7 of Jeonbuk National University Technical College, Jeonju-si, Jeollabuk-do
-          link: 'https://www.google.com/maps/search/?api=1&query=35.84601324617979,127.13444961966684'
-      autolink: true
-      coordinates:
-        latitude: '35.84601324617979'
-        longitude: '127.13444961966684'
-    design:
-      columns: '1'
 
-map:
-  provider: 'mapnik'
-  api_key: ''
-  zoom: 15
+sections:
+  - block: portfolio
+    content:
+      title: Learning Hub
+      subtitle: 'Explore my learning journey and projects'
+      text: ''
+      # Page type to display. E.g. project.
+      page_type: project
+      # Default filter index (e.g. 0 corresponds to the first `filter_button` instance below).
+      filter_default: 0
+      # Filter toolbar (optional).
+      # Add or remove as many filters (`filter_button` instances) as you like.
+      # To show all items, set `tag` to "*".
+      # To filter by a specific tag, set `tag` to an existing tag name.
+      filter_button:
+        - name: All
+          tag: '*'
+        - name: Cloud
+          tag: Cloud
+        - name: Container Orchestration 
+          tag: CO
+        - name: Network Virtualization
+          tag: NV
+        - name: DevOps & Automation
+          tag: CICD
+
+    design:
+        columns: '1'
+        view: card
+        card_view_layout: custom_card_large
+        flip_alt_rows: true
+        background: {}
+        spacing: {padding: [0, 0, "120px", 0]}
 ---
