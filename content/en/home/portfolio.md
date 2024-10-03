@@ -38,7 +38,7 @@ content:
       tag: CICD
 
 design:
-  columns: '1'
+  columns: '3'
   view: card
   card_view_layout: small_image
   flip_alt_rows: true
