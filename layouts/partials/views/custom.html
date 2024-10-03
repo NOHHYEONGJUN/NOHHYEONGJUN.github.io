@@ -19,7 +19,7 @@
     <!-- 포트폴리오 항목 섹션 -->
     <div id="projects-container">
       {{ $projects := where site.RegularPages "Type" (.Page.Params.content.page_type | default "project") }}
-      {{ range $projects }}
+      <!-- {{ range $projects }} -->
         <div class="project-row" data-tags="{{ delimit .Params.tags " " }}" style="display: flex; margin-bottom: 20px; align-items: stretch;">
           <div class="project-title" style="width: 30%; padding-right: 20px; display: flex; align-items: center;">
             <h2 style="font-size: 1.5em; margin: 0;">{{ .Title }}</h2>
@@ -54,7 +54,7 @@
             </div>
           </div>
         </div>
-      {{ end }}
+      <!-- {{ end }} -->
     </div>
   </div>
   
