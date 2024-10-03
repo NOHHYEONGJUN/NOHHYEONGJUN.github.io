@@ -1,8 +1,4 @@
 ---
-title: Learning Hub
-type: widget_page
-headless: true
-
 widget: portfolio
 headless: true
 weight: 10
