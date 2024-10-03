@@ -20,9 +20,9 @@ author: admin
 
 👋 Hi, there! I'm **NOH HYEONGJUN**
 {style="font-size: 1.2rem; background: #6799FF; -webkit-background-clip: text; -webkit-text-fill-color: transparent;"}
-Student majoring in Computer Science at Jeonbuk National University
+Student majoring in **Computer Science** at Jeonbuk National University
 {style="font-size: 1.2rem; background: #6799FF; -webkit-background-clip: text; -webkit-text-fill-color: transparent;"}
-I am studying with interest in network virtualization and cloud.
+I am studying with interest in **network virtualization** and **cloud**.
 {style="font-size: 1.2rem; background: #6799FF; -webkit-background-clip: text; -webkit-text-fill-color: transparent;"}
 
 Check out my [Resume](/en/about/) and portfolio below 😍

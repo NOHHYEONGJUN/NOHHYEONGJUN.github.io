@@ -41,7 +41,7 @@ design:
   columns: '3'
   view: card
   card_view_layout: small_image
-  flip_alt_rows: true
+  # flip_alt_rows: true
   background: {}
   spacing: {padding: [0, 0, "120px", 0]}
 ---
