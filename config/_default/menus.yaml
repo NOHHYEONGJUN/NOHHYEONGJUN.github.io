@@ -44,19 +44,19 @@ main:
     url: all/
     weight: 51
   - parent: Learning Hub
-    name: Cloud-hub
+    name: Cloud
     url: cloud-hub/
     weight: 52
   - parent: Learning Hub
-    name: Container-Orchestration-hub
+    name: Container-Orchestration
     url: container-orchestration-hub/
     weight: 53
   - parent: Learning Hub
-    name: Network-Virtualization-hub
+    name: Network-Virtualization
     url: network-virtualization-hub/
     weight: 54
   - parent: Learning Hub
-    name: DevOps&Automation-hub
+    name: DevOps & Automation
     url: devops-automation-hub/
     weight: 55
   - name: Contact
