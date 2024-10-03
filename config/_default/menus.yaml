@@ -39,23 +39,23 @@ main:
   - name: Learning Hub
     url: learning-hub/
     weight: 50
-  - parent: Learnig Hub
+  - parent: Learning Hub
     name: All
     url: all/
     weight: 51
-  - parent: Learnig Hub
+  - parent: Learning Hub
     name: Cloud-hub
     url: cloud-hub/
     weight: 52
-  - parent: Learnig Hub
+  - parent: Learning Hub
     name: Container-Orchestration-hub
     url: container-orchestration-hub/
     weight: 53
-  - parent: Learnig Hub
+  - parent: Learning Hub
     name: Network-Virtualization-hub
     url: network-virtualization-hub/
     weight: 54
-  - parent: Learnig Hub
+  - parent: Learning Hub
     name: DevOps&Automation-hub
     url: devops-automation-hub/
     weight: 55
