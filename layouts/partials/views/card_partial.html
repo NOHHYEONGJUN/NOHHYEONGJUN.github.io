@@ -1,24 +1,22 @@
 {{ $item := .item }}
 {{ $has_attachments := partial "functions/has_attachments" $item }}
 
-<div class="card">
+<div class="card h-100 shadow-sm">
   {{ with $item.Params.image }}
   {{ $image := resources.GetMatch (printf "**/%s" .) }}
   {{ with $image }}
-  <a href="{{ $item.RelPermalink }}" {{ if $has_attachments }}data-attachment="{{ ($item.Resources.ByType "application").RelPermalink }}"{{ end }}>
-    <img src="{{ .RelPermalink }}" class="card-img-top" alt="{{ $item.Title }}">
-  </a>
+  <img src="{{ .RelPermalink }}" class="card-img-top" alt="{{ $item.Title }}" style="height: 200px; object-fit: cover;">
   {{ end }}
   {{ end }}
-  <div class="card-body">
+  <div class="card-body d-flex flex-column">
     <h4 class="card-title"><a href="{{ $item.RelPermalink }}" {{ if $has_attachments }}data-attachment="{{ ($item.Resources.ByType "application").RelPermalink }}"{{ end }}>{{ $item.Title }}</a></h4>
     {{ with $item.Params.summary }}
-    <p class="card-text">{{ . | markdownify | emojify }}</p>
+    <p class="card-text flex-grow-1">{{ . | markdownify | emojify }}</p>
     {{ end }}
     {{ if $item.Params.tags }}
-    <div class="card-footer">
+    <div class="mt-auto">
       {{ range $item.Params.tags }}
-      <a class="badge badge-light" href="{{ (site.GetPage (printf "tags/%s" (urlize .))).RelPermalink }}">{{ . }}</a>
+      <span class="badge bg-primary me-1">{{ . }}</span>
       {{ end }}
     </div>
     {{ end }}

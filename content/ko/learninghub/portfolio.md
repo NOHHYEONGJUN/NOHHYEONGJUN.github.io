@@ -21,12 +21,10 @@ content:
       tag: CICD
 
 design:
-  columns: '2'
+  columns: '3'
   view: custom
   flip_alt_rows: false
   background: {}
   spacing: {padding: [0, 0, "120px", 0]}
-  custom_view:
-    - 'card_partial'
-    - 'list_partial'
+  custom_view: 'card_partial'
 ---
