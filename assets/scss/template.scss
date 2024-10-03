@@ -2,11 +2,11 @@
 // https://hugoblox.com/hugo-themes/
 
 body {
-  background-color: rgb(246, 247, 255);
+  background-color: rgb(218, 222, 255);
 }
 
 .home-section-bg {
-  background-color: rgb(246, 247, 255);
+  background-color: rgb(218, 222, 255);
 }
 
 .dark .home-section-bg {
@@ -14,7 +14,7 @@ body {
 }
 
 .home-section header-bg {
-  background-color: rgb(246, 247, 255);
+  background-color: rgb(218, 222, 255);
 }
 
 .dark .home-section header-bg {
@@ -22,7 +22,7 @@ body {
 }
 
 .article-container {
-  background-color: rgb(246, 247, 255);
+  background-color: rgb(218, 222, 255);
   border-radius: 15px;
 }
 
@@ -32,7 +32,7 @@ body {
 
 // custom footer color
 .page-footer {
-  background-color: rgb(250, 245, 255);
+  background-color: rgb(218, 222, 255);
 }
 
 .dark .page-footer {
@@ -51,7 +51,20 @@ body {
 
 // no navbar shadow
 .navbar {
+  background-color: rgb(218, 222, 255) !important;
   box-shadow: none !important; // 'important' to override dark mode box-shadow too.
+}
+
+.dark .navbar {
+  background-color: rgb(31, 39, 51) !important;
+}
+
+.navbar.navbar-light.fixed-top.navbar-expand-lg.navbar-floating.navbar-sticky {
+  background-color: rgb(218, 222, 255) !important;
+}
+
+.dark .navbar.navbar-light.fixed-top.navbar-expand-lg.navbar-floating.navbar-sticky {
+  background-color: rgb(31, 39, 51) !important;
 }
 
 // custom section padding
