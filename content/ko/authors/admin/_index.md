@@ -83,6 +83,6 @@ social:
 - CI/CD (GitLab, Jenkins, Harbor, ArgoCD, SonarQube)
 
 
-{{< icon name="download" pack="fas" >}} {{< staticref "uploads/resume.pdf" "newtab" >}}Download{{< /staticref >}} 저의 Resume을 PDF로 제공합니다.
+{{< icon name="download" pack="fas" >}} {{< staticref "uploads/5G-on-Public-Cloud.pdf" "newtab" >}}Download{{< /staticref >}} 5G on Public Cloud 가이드 자료를 제공합니다.
 
 <div style="margin-bottom: 100px;"></div>
