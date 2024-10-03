@@ -11,7 +11,7 @@ appearance:
   font: minimal
   font_size: L
 
-baseURL: 'https://nohhyeongjun.portfolio/'
+baseURL: 'http://nohhyeongjun.portfolio/'
 
 # SEO
 
