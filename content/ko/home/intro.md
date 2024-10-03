@@ -22,5 +22,7 @@ author: admin
 {style="font-size: 1.2rem; background: #6799FF; -webkit-background-clip: text; -webkit-text-fill-color: transparent;"}
 전북대학교에서 컴퓨터 공학을 전공하고 있습니다.
 {style="font-size: 1.2rem; background: #6799FF; -webkit-background-clip: text; -webkit-text-fill-color: transparent;"}
+네트워크 가상화 및 클라우드에 관심을 가지고 공부중입니다.
+{style="font-size: 1.2rem; background: #6799FF; -webkit-background-clip: text; -webkit-text-fill-color: transparent;"}
 
   [Resume](/about/)에서 제 포트폴리오를 확인해주세요! 😍
