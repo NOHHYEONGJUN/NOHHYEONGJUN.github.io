@@ -1,12 +1,12 @@
 ---
 # Display name
-title: 노형준 (NOH HYEONGJUN)
+title: NOH HYEONGJUN
 
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position
-role: '전북대학교 컴퓨터인공지능학부 학생'
+role: 'Student Department of Computer, Jeonbuk University '
 
 # Status emoji
 status:

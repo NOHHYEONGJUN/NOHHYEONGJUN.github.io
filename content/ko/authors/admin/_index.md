@@ -1,6 +1,6 @@
 ---
 # Display name
-title: 노형준 (NOH HYEONGJUN)
+title: 노형준
 
 # Is this the primary user of the site?
 superuser: true

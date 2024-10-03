@@ -2,15 +2,19 @@
 // https://hugoblox.com/hugo-themes/
 
 body {
-  background-color: rgb(233, 212, 255);
+  background-color: rgb(250, 245, 255);
 }
 
 .home-section-bg {
-  background-color: rgb(233, 212, 255);
+  background-color: rgb(250, 245, 255);
+}
+
+.dark .home-section-bg {
+  background-color: rgb(31, 39, 51);
 }
 
 .article-container {
-  background-color: rgb(233, 212, 255);
+  background-color: rgb(250, 245, 255);
   border-radius: 15px;
 }
 
@@ -20,7 +24,7 @@ body {
 
 // custom footer color
 .page-footer {
-  background-color: rgb(153, 163, 249);;
+  background-color: rgb(250, 245, 255);
 }
 
 .dark .page-footer {
