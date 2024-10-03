@@ -29,12 +29,12 @@ main:
     url: focus/
     weight: 40
   - parent: Focus Areas
-    name: Network-Virtualization
-    url: network-virtualization/
-    weight: 41
-  - parent: Focus Areas
     name: Cloud
     url: cloud/
+    weight: 41
+  - parent: Focus Areas
+    name: Network-Virtualization
+    url: network-virtualization/
     weight: 42
   - name: Learning Hub
     url: learning-hub/
