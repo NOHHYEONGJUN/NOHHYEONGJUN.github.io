@@ -21,7 +21,7 @@ content:
       tag: CICD
 
 design:
-  columns: '2'
+  columns: '1'
   view: custom
   flip_alt_rows: false
   background: {}
