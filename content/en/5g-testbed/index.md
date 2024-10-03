@@ -9,7 +9,9 @@ sections:
       subtitle: MEC
       text: |
         # Efficient Data Processing<br> with MEC in 5G Networks
-        ![Project Logo](5g-testbed.png)
+        <div style="text-align: center; margin: 20px 0;">
+          <img src="5g-testbed.png" alt="Project Logo" style="width: 100%; max-width: 1000px; height: auto;">
+        </div>
 
         <br><br><br>
 
@@ -70,17 +72,23 @@ sections:
         <br><br><br>
 
         ## 4. OpenAirInterface5G Architecture
-        ![oai](oai.png)
+        <div style="text-align: center; margin: 20px 0;">
+          <img src="oai.png" alt="OpenAirInterface5G Architecture" style="width: 100%; max-width: 1000px; height: auto;">
+        </div>
 
         <br><br><br>
 
         ## 5. Point Use Stack
-        ![OAI Stack](stack.jpg)
+        <div style="text-align: center; margin: 20px 0;">
+          <img src="Stack.jpg" alt="OAI Stack" style="width: 100%; max-width: 1000px; height: auto;">
+        </div>
 
         <br><br><br>
 
         ## 6. OpenStack
-        ![OpenStack](openstack.png)
+        <div style="text-align: center; margin: 20px 0;">
+          <img src="openstack.png" alt="OpenStack" style="width: 100%; max-width: 1000px; height: auto;">
+        </div>
 
         <br><br><br>
 

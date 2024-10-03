@@ -8,7 +8,9 @@ sections:
       title: 'Cloud Computing'
       subtitle: ''
       text: |
-        ![Cloud Computing Architecture](public&private-cloud.png)
+        <div style="text-align: center; margin: 20px 0;">
+          <img src="public&private-cloud.png" alt="Cloud Computing Architecture" style="width: 100%; max-width: 1000px; height: auto;">
+        </div>
 
         ## Introduction
         Cloud computing is a technology that provides computing resources over the internet, offering flexible and scalable IT infrastructure to businesses and individuals.
@@ -75,7 +77,9 @@ sections:
         <br><br><br>
 
         ## 4. Public Cloud Market Share
-        ![Public Cloud Computing Architecture](public-cloud.png)
+        <div style="text-align: center; margin: 20px 0;">
+          <img src="public-cloud.png" alt="Public Cloud Computing Architecture" style="width: 100%; max-width: 1000px; height: auto;">
+        </div>
 
         <br><br><br>
 

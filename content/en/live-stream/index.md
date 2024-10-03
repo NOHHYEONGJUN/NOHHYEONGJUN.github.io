@@ -9,7 +9,9 @@ sections:
       subtitle: AWS 
       text: |
         # OliveYoung Live Commerce 
-        ![Project Logo](Project-Logo.png)
+        <div style="text-align: center; margin: 20px 0;">
+          <img src="Project-Logo.png" alt="Project Logo" style="width: 100%; max-width: 1000px; height: auto;">
+        </div>
         - Access URL: https://www.olcl.shop
         - Test ID: user1 / CloudWave!
 
@@ -89,43 +91,59 @@ sections:
         <br><br><br>
 
         ## 4. Overall Architecture
-        ![Main Architecture](main-archi.png)
+        <div style="text-align: center; margin: 20px 0;">
+          <img src="main-archi.png" alt="Main Architecture" style="width: 100%; max-width: 1000px; height: auto;">
+        </div>
 
         <br><br><br>
 
         ## 5. IVS - Service Flow
-        ![IVS Service Flow](IVS-service.png)
+        <div style="text-align: center; margin: 20px 0;">
+          <img src="IVS-service.png" alt="IVS Service Flow" style="width: 100%; max-width: 1000px; height: auto;">
+        </div>
 
         <br><br><br>
 
         ## 6. Rekognition + Personalize - Service Flow
-        ![Rekognition and Personalize Service Flow](Rekognition+Personalize.png)
+        <div style="text-align: center; margin: 20px 0;">
+          <img src="Rekognition+Personalize.png" alt="Rekognition and Personalize Service Flow" style="width: 100%; max-width: 1000px; height: auto;">
+        </div>
 
         <br><br><br>
 
         ## 7. Monitoring
-        ![Grafana Dashboard](Grafana.png)
+        <div style="text-align: center; margin: 20px 0;">
+          <img src="Grafana.png" alt="Grafana Dashboard" style="width: 100%; max-width: 1000px; height: auto;">
+        </div>
         - Prometheus + Loki & CloudWatch
 
         <br><br><br>
 
         ## 8. Alarm
-        ![Alarm System](Alarm.png)
+        <div style="text-align: center; margin: 20px 0;">
+          <img src="Alarm.png" alt="Alarm System" style="width: 100%; max-width: 1000px; height: auto;">
+        </div>
 
         <br><br><br>
 
         ## 9-1. CI/CD Pipeline
-        ![CI/CD Pipeline](CICD.png)
+        <div style="text-align: center; margin: 20px 0;">
+          <img src="CICD.png" alt="CI/CD Pipeline" style="width: 100%; max-width: 1000px; height: auto;">
+        </div>
 
         <br><br><br>
 
         ## 9-2. Lambda Pipeline
-        ![Lambda Pipeline](Lambda-pipeline.png)
+        <div style="text-align: center; margin: 20px 0;">
+          <img src="Lambda-pipeline.png" alt="Lambda Pipeline" style="width: 100%; max-width: 1000px; height: auto;">
+        </div>
 
         <br><br><br>
 
         ## 10. Load Test
-        ![Load Test Results](LoadTest.png)
+        <div style="text-align: center; margin: 20px 0;">
+          <img src="LoadTest.png" alt="Load Test Results" style="width: 100%; max-width: 1000px; height: auto;">
+        </div>
         - 100,000 requests/s Test using ApacheBench & JMeter
 
         <br><br><br>
