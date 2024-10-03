@@ -23,6 +23,8 @@ content:
 
 design:
   columns: '1'
-  view: custom
-  flip_alt_rows: false
+  view: masonry
+  flip_alt_rows: true
+  background: {}
+  spacing: {padding: [0, 0, "120px", 0]}
 ---
