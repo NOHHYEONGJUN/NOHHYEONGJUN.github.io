@@ -11,6 +11,8 @@ appearance:
   font: minimal
   font_size: L
 
+baseURL: 'https://nohhyeongjun.portfolio/'
+
 # SEO
 
 marketing:
