@@ -25,7 +25,7 @@ marketing:
     og:
       title: '전북대학교 노형준의 포트폴리오' 
       type: 'website' 
-      url: 'https://nohhyeongjun.portfolio/' 
+      url: 'https://nohhyeongjun.github.io/' 
       image: 'assets/media/og-image.png' 
       site_name: 'NOHHYEONGJUN PORTFOLIO' 
   analytics:
