@@ -80,7 +80,7 @@ sections:
 
         ## 5. Point Use Stack
         <div style="text-align: center; margin: 20px 0;">
-          <img src="stack.jpg" alt="OAI Stack" style="width: 100%; max-width: 1000px; height: auto;">
+          <img src="Stack.jpg" alt="OAI Stack" style="width: 100%; max-width: 1000px; height: auto;">
         </div>
 
         <br><br><br>
