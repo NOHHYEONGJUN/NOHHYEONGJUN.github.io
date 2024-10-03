@@ -19,7 +19,8 @@
     <!-- 포트폴리오 항목 섹션 -->
     <div id="projects-container">
       {{ $projects := where site.RegularPages "Type" (.Page.Params.content.page_type | default "project") }}
-      <!-- {{ range $projects }} -->
+      {{ $projects := first 10 $projects }} <!-- 최초 10개 프로젝트만 가져옴 -->
+      {{ range $projects }} <!-- 여기서부터 각 프로젝트를 한 번만 렌더링 -->
         <div class="project-row" data-tags="{{ delimit .Params.tags " " }}" style="display: flex; margin-bottom: 20px; align-items: stretch;">
           <div class="project-title" style="width: 30%; padding-right: 20px; display: flex; align-items: center;">
             <h2 style="font-size: 1.5em; margin: 0;">{{ .Title }}</h2>
@@ -54,41 +55,6 @@
             </div>
           </div>
         </div>
-      <!-- {{ end }} -->
+      {{ end }} <!-- 이 줄이 제대로 끝나도록 합니다. -->
     </div>
   </div>
-  
-  <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const filterButtons = document.querySelectorAll('#filter-buttons .btn');
-    const projects = document.querySelectorAll('.project-row');
-    const projectTitles = document.querySelectorAll('.project-title h2');
-  
-    filterButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        const filter = button.getAttribute('data-filter');
-  
-        filterButtons.forEach(btn => btn.classList.remove('active'));
-        button.classList.add('active');
-  
-        projects.forEach(project => {
-          const tags = project.getAttribute('data-tags').split(' ');
-          if (filter === '*' || tags.includes(filter)) {
-            project.style.display = 'flex';
-          } else {
-            project.style.display = 'none';
-          }
-        });
-  
-        projectTitles.forEach(title => {
-          if (filter === '*') {
-            title.style.fontSize = '1.5em';
-          } else {
-            title.style.fontSize = '2em';
-          }
-        });
-      });
-    });
-  });
-  </script>
-  
