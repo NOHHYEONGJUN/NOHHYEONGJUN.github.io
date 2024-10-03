@@ -22,12 +22,6 @@ marketing:
     org_name: '전북대학교 노형준의 포트폴리오'
     description: '전북대학교 컴퓨터인공지능학부 노형준의 연구 및 프로젝트 포트폴리오'
     twitter: 'GetResearchDev'
-    og:
-      title: '전북대학교 노형준의 포트폴리오' 
-      type: 'website' 
-      url: 'https://nohhyeongjun.github.io/' 
-      image: 'assets/media/og-image.png' 
-      site_name: 'NOHHYEONGJUN PORTFOLIO' 
   analytics:
     google_analytics: ''
     baidu_tongji: ''
@@ -124,3 +118,16 @@ search:
     enable: true
     align: right
     highlight: true
+
+sharing_image: "og-image.png"
+
+twitter: "GetResearchDev"
+
+# Open Graph 
+og:
+  title: '전북대학교 노형준의 포트폴리오'
+  type: 'website'
+  url: 'https://nohhyeongjun.github.io/'
+  image: '/media/og-image.png'
+  site_name: 'NOHHYEONGJUN PORTFOLIO'
+  description: '전북대학교 컴퓨터인공지능학부 노형준의 연구 및 프로젝트 포트폴리오'
