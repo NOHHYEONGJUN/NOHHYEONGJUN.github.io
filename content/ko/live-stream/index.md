@@ -160,3 +160,5 @@ sections:
 
         3. Log에 대한 분석 고도화
               - ELK stack (Elasticsearch - Logstash - Kibana) 사용 → 문제 대응력 강화
+
+---
