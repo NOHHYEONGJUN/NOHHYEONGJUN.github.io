@@ -39,6 +39,26 @@ main:
   - name: Learning Hub
     url: learninghub/
     weight: 50
+  - parent: Learnig Hub
+    name: All
+    url: all/
+    weight: 51
+  - parent: Learnig Hub
+    name: Cloud
+    url: cloud-hub/
+    weight: 51
+  - parent: Learnig Hub
+    name: Container Orchestration
+    url: container-orchestration-hub/
+    weight: 51
+  - parent: Learnig Hub
+    name: Network Virtualization
+    url: network-virtualization-hub/
+    weight: 51
+  - parent: Learnig Hub
+    name: DevOps & Automation
+    url: devops-automation-hub/
+    weight: 51
   - name: Contact
     url: contact/
     weight: 60

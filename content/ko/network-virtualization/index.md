@@ -123,7 +123,9 @@ sections:
         <br><br><br>
 
         ## 4. 기술 아키텍처
-        ![NV and MEC Architecture](nv.png)
+        <div style="text-align: center; margin: 20px 0;">
+          <img src="nv.png" alt="NV and MEC Architecture" style="width: 100%; max-width: 1000px; height: auto;">
+        </div>
 
         <br><br><br>
 
