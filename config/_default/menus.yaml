@@ -37,7 +37,7 @@ main:
     url: cloud/
     weight: 42
   - name: Learning Hub
-    url: learninghub/
+    url: learning-hub/
     weight: 50
   - parent: Learnig Hub
     name: All
