@@ -1,5 +1,4 @@
 ---
-
 widget: portfolio
 headless: true
 
@@ -22,9 +21,12 @@ content:
       tag: CICD
 
 design:
-  columns: '1'
-  view: masonry
-  flip_alt_rows: true
+  columns: '2'
+  view: custom
+  flip_alt_rows: false
   background: {}
   spacing: {padding: [0, 0, "120px", 0]}
+  custom_view:
+    - 'card_partial'
+    - 'list_partial'
 ---

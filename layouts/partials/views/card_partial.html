@@ -1,0 +1,26 @@
+{{ $item := .item }}
+{{ $has_attachments := partial "functions/has_attachments" $item }}
+
+<div class="card">
+  {{ with $item.Params.image }}
+  {{ $image := resources.GetMatch (printf "**/%s" .) }}
+  {{ with $image }}
+  <a href="{{ $item.RelPermalink }}" {{ if $has_attachments }}data-attachment="{{ ($item.Resources.ByType "application").RelPermalink }}"{{ end }}>
+    <img src="{{ .RelPermalink }}" class="card-img-top" alt="{{ $item.Title }}">
+  </a>
+  {{ end }}
+  {{ end }}
+  <div class="card-body">
+    <h4 class="card-title"><a href="{{ $item.RelPermalink }}" {{ if $has_attachments }}data-attachment="{{ ($item.Resources.ByType "application").RelPermalink }}"{{ end }}>{{ $item.Title }}</a></h4>
+    {{ with $item.Params.summary }}
+    <p class="card-text">{{ . | markdownify | emojify }}</p>
+    {{ end }}
+    {{ if $item.Params.tags }}
+    <div class="card-footer">
+      {{ range $item.Params.tags }}
+      <a class="badge badge-light" href="{{ (site.GetPage (printf "tags/%s" (urlize .))).RelPermalink }}">{{ . }}</a>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+</div>
