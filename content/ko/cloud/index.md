@@ -8,8 +8,8 @@ sections:
       title: '클라우드 컴퓨팅'
       subtitle: ''
       text: |
-        <div style="text-align: center;">
-          <img src="public&private-cloud.png" alt="Cloud Computing Architecture" style="width: 80%; max-width: 800px;">
+        <div style="text-align: center; margin: 20px 0;">
+          <img src="public&private-cloud.png" alt="Cloud Computing Architecture" style="width: 100%; max-width: 1000px; height: auto;">
         </div>
 
         ## 소개
@@ -77,8 +77,8 @@ sections:
         <br><br><br>
 
         ## 4. 퍼블릭 클라우드 점유율 현황
-        <div style="text-align: center;">
-          <img src="public-cloud.png" alt="Public Cloud Computing Architecture" style="width: 80%; max-width: 800px;">
+        <div style="text-align: center; margin: 20px 0;">
+          <img src="public-cloud.png" alt="Public Cloud Computing Architecture" style="width: 100%; max-width: 1000px; height: auto;">
         </div>
 
         <br><br><br>
@@ -122,5 +122,4 @@ sections:
         <br><br><br>
 
         "클라우드 컴퓨팅은 현대 IT 인프라의 근간이 되었습니다. 이는 기업의 디지털 혁신을 가속화하고, 새로운 비즈니스 모델을 가능케 하는 핵심 기술입니다. 클라우드에 대한 깊이 있는 이해는 미래 IT 산업의 발전 방향을 예측하고 선도하는 데 필수적입니다."
-  
 ---
