@@ -2,7 +2,6 @@
 
 widget: portfolio
 headless: true
-weight: 10
 
 title: "Learning Hub"
 subtitle: "나의 학습 프로젝트"
