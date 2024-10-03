@@ -20,8 +20,9 @@ content:
     - name: DevOps & Automation
       tag: CICD
 
+
 design:
-  columns: '3'
+  columns: '2'
   view: custom
   flip_alt_rows: false
   background: {}
