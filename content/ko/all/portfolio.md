@@ -2,12 +2,15 @@
 widget: portfolio
 headless: true
 weight: 20
-title: 'Notifications & News'
+title: 'Learning Hub'
 subtitle: ''
 
 content:
-  page_type: post
+  page_type: project
   filter_default: 0
+  filter_button:
+    - name: All
+      tag: '*'
 
 design:
   columns: '1'
