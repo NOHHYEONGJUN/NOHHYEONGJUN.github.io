@@ -1,0 +1,53 @@
+<!-- layouts/partials/custom_head.html -->
+<style>
+    .masonry-item {
+      width: calc(33.33% - 20px) !important;
+      margin: 10px !important;
+    }
+    
+    .card {
+      height: 100% !important;
+      display: flex !important;
+      flex-direction: column !important;
+    }
+    
+    .card-body {
+      flex-grow: 1 !important;
+      display: flex !important;
+      flex-direction: column !important;
+    }
+    
+    .article-title {
+      flex-grow: 1 !important;
+    }
+    
+    .article-style {
+      flex-grow: 0 !important;
+    }
+    
+    .section-subheading {
+      display: none !important;
+    }
+    
+    .article-thumbnail img {
+      height: 200px !important;
+      object-fit: cover !important;
+      width: 100% !important;
+    }
+  
+    /* Force equal height for all cards */
+    #projects.row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    #projects.row::after {
+      content: "";
+      flex: auto;
+    }
+  
+    #projects.row .project-card {
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
