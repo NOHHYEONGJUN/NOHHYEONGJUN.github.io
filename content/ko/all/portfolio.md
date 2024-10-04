@@ -18,8 +18,10 @@ design:
   flip_alt_rows: false
   background: {}
   spacing: {padding: [0, 0, "120px", 0]}
-  margin: [0, 0, "20px", 0]
 
   view_options:
     card_view_layout: custom
+
+  title_style: 
+    margin_bottom: "20px"
 ---
