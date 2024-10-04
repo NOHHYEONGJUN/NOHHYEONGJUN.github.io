@@ -7,16 +7,17 @@
 {{ end }}
 {{ $resource := partial "blox-core/functions/get_featured_image.html" $item }}
 
-<div class="project-card">
-  <div class="project-title">
-    <h3><a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="text-decoration-none">{{ $item.Title }}</a></h3>
+<div class="section-container">
+  <div class="section-title">
+    <h2>{{ $.page.Title }}</h2>
   </div>
-  <div class="project-content">
+  <div class="content-card">
     {{ with $resource }}
-      {{ $image := .Resize "400x" }}
+      {{ $image := .Resize "800x" }}
       {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
-      <img src="{{ $image.RelPermalink }}" class="project-image" alt="{{ $item.Title }}">
+      <img src="{{ $image.RelPermalink }}" class="card-image" alt="{{ $item.Title }}">
     {{ end }}
-    <p class="project-subtitle">{{ $item.Params.subtitle }}</p>
+    <h3 class="card-title">{{ $item.Title }}</h3>
+    <p class="card-text">{{ $item.Params.subtitle | default $item.Summary }}</p>
   </div>
 </div>
