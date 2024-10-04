@@ -1,27 +1,23 @@
-{{ $items := where site.RegularPages "Type" "project" }}
+{{ $item := .item }}
+{{ $link := $item.RelPermalink }}
+{{ $target := "" }}
+{{ if $item.Params.external_link }}
+  {{ $link = $item.Params.external_link }}
+  {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
+{{ end }}
+{{ $resource := partial "blox-core/functions/get_featured_image.html" $item }}
 
-<div class="learning-hub-container">
+<div class="section-container">
   <div class="section-title">
-    <h2>Learning Hub</h2>
+    <h2>{{ $.page.Title }}</h2>
   </div>
-  <div class="cards-container">
-    {{ range $items }}
-    {{ $link := .RelPermalink }}
-    {{ $target := "" }}
-    {{ if .Params.external_link }}
-      {{ $link = .Params.external_link }}
-      {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
+  <div class="content-card">
+    {{ with $resource }}
+      {{ $image := .Resize "800x" }}
+      {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
+      <img src="{{ $image.RelPermalink }}" class="card-image" alt="{{ $item.Title }}">
     {{ end }}
-    {{ $resource := partial "blox-core/functions/get_featured_image.html" . }}
-    <div class="content-card">
-      {{ with $resource }}
-        {{ $image := .Resize "400x" }}
-        {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
-        <img src="{{ $image.RelPermalink }}" class="card-image" alt="{{ $.Title }}">
-      {{ end }}
-      <h3 class="card-title">{{ .Title }}</h3>
-      <p class="card-text">{{ .Params.subtitle | default .Summary }}</p>
-    </div>
-    {{ end }}
+    <h3 class="card-title">{{ $item.Title }}</h3>
+    <p class="card-text">{{ $item.Params.subtitle | default $item.Summary }}</p>
   </div>
 </div>
