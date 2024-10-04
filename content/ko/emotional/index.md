@@ -5,7 +5,7 @@ type: landing
 sections:
   - block: markdown
     content:
-      title: "KoBERT 모델을 이용한<br> 감정 분석 기반 일기 서비스"
+      title: "**KoBERT 모델을 이용한<br> 감정 분석 기반 일기 서비스**"
       subtitle: AI-powered Diary Application with Empathy
       text: |
         # Empathetic AI Diary

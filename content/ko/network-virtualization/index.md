@@ -5,7 +5,7 @@ type: landing
 sections:
   - block: markdown
     content:
-      title: 네트워크 가상화
+      title: '**네트워크 가상화**'
       text: |
         # NFV & MEC
 
