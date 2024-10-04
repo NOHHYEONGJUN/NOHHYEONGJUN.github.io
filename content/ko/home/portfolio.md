@@ -1,5 +1,4 @@
 ---
-# Portfolio widget configuration
 widget: portfolio
 headless: true
 weight: 20
@@ -28,7 +27,6 @@ design:
   background: {}
   spacing: {padding: [0, 0, 0, 0]}
 
-  # Custom options for card view
   view_options:
     theme: custom
     columns: 3
