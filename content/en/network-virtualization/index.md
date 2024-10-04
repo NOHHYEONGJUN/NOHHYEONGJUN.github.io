@@ -167,5 +167,7 @@ sections:
 
         <br><br><br>
 
+        <div style="text-align: justify;">
         "Network virtualization and MEC are more than just technologies. They represent a revolutionary paradigm that can fundamentally change how we interact with the world. A deep understanding of these fields will be crucial for future network innovation."
+        </div>
 ---

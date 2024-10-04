@@ -121,5 +121,7 @@ sections:
 
         <br><br><br>
 
+        <div style="text-align: justify;">
         "Cloud computing has become the foundation of modern IT infrastructure. It is a key technology that accelerates digital transformation in businesses and enables new business models. A deep understanding of cloud computing is essential for predicting and leading the future direction of the IT industry."
+        </div>
 ---
