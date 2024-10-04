@@ -2,6 +2,10 @@
 title: My page
 type: landing
 
+banner:
+  caption: ''
+  image: 'public&private-cloud.png'
+
 sections:
   - block: markdown
     content:
