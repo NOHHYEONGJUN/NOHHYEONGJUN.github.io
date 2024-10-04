@@ -178,13 +178,31 @@ ul.network-icon .big-icon {
 }
 
 .section-title {
-  flex: 0 0 30%;
+  flex: 0 0 20%;
   padding-right: 20px;
 }
 
 .section-title h2 {
   font-size: 2rem;
   font-weight: bold;
+  margin-top: 0;
+  position: sticky;
+  top: 20px;
+}
+
+.card-container {
+  flex: 0 0 80%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.card-title-left {
+  flex: 0 0 30%;
+  padding-right: 20px;
+}
+
+.card-title-left h3 {
+  font-size: 1.5rem;
   margin-top: 0;
 }
 
@@ -194,6 +212,7 @@ ul.network-icon .big-icon {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
 }
 
 .card-image {
@@ -203,27 +222,35 @@ ul.network-icon .big-icon {
 }
 
 .card-title {
-  font-size: 1.5rem;
-  margin: 20px 20px 10px;
+  font-size: 1.2rem;
+  margin: 15px 15px 5px;
 }
 
 .card-text {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #666;
-  margin: 0 20px 20px;
+  margin: 0 15px 15px;
 }
 
 // 반응형 디자인
 @media (max-width: 768px) {
-  .section-container {
+  .section-container, .card-container {
     flex-direction: column;
   }
 
-  .section-title, .content-card {
+  .section-title, .card-title-left, .content-card {
     flex: 0 0 100%;
   }
 
-  .section-title {
+  .section-title, .card-title-left {
     margin-bottom: 20px;
+  }
+
+  .section-title h2 {
+    position: static;
+  }
+
+  .content-card {
+    max-width: 100%;
   }
 }
