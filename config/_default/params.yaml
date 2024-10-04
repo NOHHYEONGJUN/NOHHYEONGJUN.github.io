@@ -10,7 +10,6 @@ appearance:
   theme_night: custom
   font: minimal
   font_size: L
-  customCSS: ["scss/template.scss"]
 
 baseURL: 'https://nohhyeongjun.github.io/'
 
