@@ -41,9 +41,25 @@ content:
 
 design:
   columns: '1'
-  view: masonry
-  flip_alt_rows: true
+  view: card
+  flip_alt_rows: false
   background: {}
-  spacing: {padding: [0, 0, "120px", 0]}
+  spacing: {padding: [0, 0, 0, 0]}
+
+  # Card design settings
+  card:
+    # Set a fixed height for all cards
+    height: '400px'  # Adjust this value as needed
+    text_color: 'black'
+    background: 'white'
+
+  # Grid settings
+  view_options:
+    # Set to display 3 columns on desktop
+    columns_desktop: 3
+    # Set to display 2 columns on tablet
+    columns_tablet: 2
+    # Set to display 1 column on mobile
+    columns_mobile: 1
 
 ---
