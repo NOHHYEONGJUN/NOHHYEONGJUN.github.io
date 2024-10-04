@@ -1,33 +1,39 @@
 {{ $item := .item }}
-{{ $has_attachments := partial "functions/has_attachments" $item }}
+{{ $link := $item.RelPermalink }}
+{{ $target := "" }}
+
+{{ if $item.Params.external_link }}
+  {{ $link = $item.Params.external_link }}
+  {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
+{{ end }}
 
 <div class="card">
-  {{ with $item.image }}
-  {{ $image := .}}
-  {{ with resources.Get .}}
-    {{ $image = .Fit "600x400" }}
-  {{ end }}
-  <a href="{{ $item.Params.external_link | default $item.RelPermalink }}" {{ if $item.Params.external_link }}target="_blank" rel="noopener"{{ end }}>
-    <img src="{{ $image.RelPermalink }}" class="card-img-top" alt="{{ $item.Title }}" style="height: 200px; object-fit: cover;">
-  </a>
+  {{ with $item.Params.image }}
+    {{ $image := . }}
+    {{ if resources.Get . }}
+      {{ $image = (resources.Get .).Fit "600x400" }}
+    {{ end }}
+    <a href="{{ $link }}" {{ $target | safeHTMLAttr }}>
+      <img src="{{ $image }}" class="card-img-top" alt="{{ $item.Title }}" style="height: 200px; object-fit: cover;">
+    </a>
   {{ end }}
   <div class="card-body">
-    <h4 class="card-title mb-0">{{ $item.Title }}</h4>
-    {{ with $item.Params.subtitle }}<p class="card-text mt-1">{{ . }}</p>{{ end }}
+    <h4 class="card-title mb-0">
+      <a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{ $item.Title }}</a>
+    </h4>
+    {{ with $item.Params.subtitle }}
+      <p class="card-text mt-1">{{ . }}</p>
+    {{ end }}
     <div class="card-text">
       {{ if eq $item.Type "event" }}
         {{ partial "functions/get_event_dates" $item }}
       {{ else }}
-        {{ partial "functions/get_event_dates" $item }}
+        {{ with $item.Params.summary }}
+          {{ . | markdownify | emojify }}
+        {{ else }}
+          {{ $item.Summary }}
+        {{ end }}
       {{ end }}
     </div>
-    {{ if $has_attachments }}
-      <div class="card-attachments mt-4">
-        <h5 class="card-title mb-3">{{ i18n "attachments" }}</h5>
-        {{ range $item.Params.attachments }}
-          {{ partial "elements/attachment" (dict "resource" . "page" $item) }}
-        {{ end }}
-      </div>
-    {{ end }}
   </div>
 </div>
