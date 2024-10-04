@@ -18,9 +18,11 @@ sections:
         <br><br><br>
 
         ## 프로젝트 소개
+        <div style="text-align: justify;">
         - 3개 이상의 라이브 채널을 제공하는 **다중** 채널 라이브 서비스
         - 클라우드 기반의 트래픽 처리를 통한 **안정적인** 라이브 서비스
         - **AWS SaaS** 기반 ML 서비스 활용을 통한 개인 맞춤형 서비스
+        </div>
 
         <br><br>
 
@@ -80,12 +82,14 @@ sections:
            <br><br><br>
 
         ## 3. 프로젝트 차별점
+        <div style="text-align: justify;">
         - 개발 환경과 운영 환경 분리 및 격리를 위한 중앙 관리 환경 존재
         - Warm Standby DR (RTO : 5min / RPO : 15min)
         - Public Bastion X → EC2 Instance Connect Endpoint 사용
         - 폐쇄 CI/CD 구축
         - 환경 간 중복 리소스 공유
         - 썸네일을 사용한 Rekognize로 1/25 수준 비용 절감
+        </div>
 
         <br><br><br>
 
@@ -148,6 +152,7 @@ sections:
         <br><br><br>
 
         ## 11. 개선 목표
+        <div style="text-align: justify;">
         1. Monitoring 최적화
               - 단일 Prometheus기반 중앙 집중식 모니터링 → Thanos(OSS)를 활용한 메트릭 관리
 
@@ -160,5 +165,6 @@ sections:
 
         3. Log에 대한 분석 고도화
               - ELK stack (Elasticsearch - Logstash - Kibana) 사용 → 문제 대응력 강화
+        </div>
 
 ---
