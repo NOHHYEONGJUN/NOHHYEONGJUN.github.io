@@ -21,4 +21,9 @@ design:
 
   view_options:
     card_view_layout: custom
+
+style: |
+  .widget-title {
+    margin-bottom: 20px; 
+  }
 ---
