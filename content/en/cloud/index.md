@@ -1,6 +1,7 @@
 ---
 title: My page
 type: landing
+image: "public&private-cloud.png"
 
 sections:
   - block: markdown
