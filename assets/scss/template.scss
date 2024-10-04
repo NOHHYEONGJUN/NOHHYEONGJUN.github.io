@@ -1,6 +1,56 @@
 // Starter Blog Template
 // https://hugoblox.com/hugo-themes/
 
+.content-card-2 {
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: rgb(240, 248, 255); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transform: translateY(-5px); 
+  }
+}
+
+.dark .content-card-2 {
+  background-color: #1e1e1e;
+
+  &:hover {
+    background-color: rgb(41, 49, 61); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+  }
+}
+
+.content-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.content-card {
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: rgb(240, 248, 255); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transform: translateY(-5px); 
+  }
+}
+
+.dark .content-card {
+  &:hover {
+    background-color: rgb(41, 49, 61); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+  }
+}
+
+
+
+
+
 .card-simple:hover {
   background-color: rgb(240, 248, 255); 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 

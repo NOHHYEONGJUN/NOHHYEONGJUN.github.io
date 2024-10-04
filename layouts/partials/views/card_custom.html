@@ -11,13 +11,15 @@
   <div class="card-title-left">
     <h3>{{ $item.Title }}</h3>
   </div>
-  <div class="content-card">
-    {{ with $resource }}
-      {{ $image := .Resize "600x" }}
-      {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
-      <img src="{{ $image.RelPermalink }}" class="card-image" alt="{{ $item.Title }}">
-    {{ end }}
-    <h4 class="card-title">{{ $item.Title }}</h4>
-    <p class="card-text">{{ $item.Params.subtitle | default $item.Summary }}</p>
-  </div>
+  <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="content-card-link">
+    <div class="content-card">
+      {{ with $resource }}
+        {{ $image := .Resize "400x" }}
+        {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
+        <img src="{{ $image.RelPermalink }}" class="card-image" alt="{{ $item.Title }}">
+      {{ end }}
+      <h4 class="card-title">{{ $item.Title }}</h4>
+      <p class="card-text">{{ $item.Params.subtitle | default $item.Summary }}</p>
+    </div>
+  </a>
 </div>
