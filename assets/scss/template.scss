@@ -175,29 +175,11 @@ ul.network-icon .big-icon {
 .section-container {
   display: flex;
   margin-bottom: 40px;
-}
-
-.section-title {
-  flex: 0 0 20%;
-  padding-right: 20px;
-}
-
-.section-title h2 {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-top: 0;
-  position: sticky;
-  top: 20px;
-}
-
-.card-container {
-  flex: 0 0 80%;
-  display: flex;
   align-items: flex-start;
 }
 
 .card-title-left {
-  flex: 0 0 30%;
+  flex: 0 0 20%;
   padding-right: 20px;
 }
 
@@ -207,7 +189,7 @@ ul.network-icon .big-icon {
 }
 
 .content-card {
-  flex: 0 0 70%;
+  flex: 0 0 60%;
   background-color: #ffffff;
   border-radius: 8px;
   overflow: hidden;
@@ -234,20 +216,16 @@ ul.network-icon .big-icon {
 
 // 반응형 디자인
 @media (max-width: 768px) {
-  .section-container, .card-container {
+  .section-container {
     flex-direction: column;
   }
 
-  .section-title, .card-title-left, .content-card {
+  .card-title-left, .content-card {
     flex: 0 0 100%;
   }
 
-  .section-title, .card-title-left {
+  .card-title-left {
     margin-bottom: 20px;
-  }
-
-  .section-title h2 {
-    position: static;
   }
 
   .content-card {
