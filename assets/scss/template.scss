@@ -21,6 +21,7 @@
 
 .dark .content-card-2 {
   background-color: #1e1e1e;
+  color: white;
 
   &:hover {
     background-color: rgb(41, 49, 61); 
@@ -45,6 +46,8 @@
 }
 
 .dark .content-card {
+  background-color: rgb(41, 49, 61); 
+
   &:hover {
     background-color: rgb(41, 49, 61); 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
