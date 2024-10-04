@@ -169,3 +169,56 @@ ul.network-icon .big-icon {
 .wg-about .portrait-title h3 {
   font-size: 0.8rem;
 }
+
+.project-card {
+  display: flex;
+  margin-bottom: 30px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-title {
+  flex: 0 0 30%;
+  padding: 20px;
+  background-color: #f8f9fa;
+  display: flex;
+  align-items: center;
+}
+
+.project-title h3 {
+  margin: 0;
+}
+
+.project-title a {
+  color: #2962ff;
+  text-decoration: none;
+}
+
+.project-content {
+  flex: 0 0 70%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.project-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 4px;
+}
+
+.project-subtitle {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+// 호버 효과
+.project-card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
