@@ -2,7 +2,7 @@
 widget: portfolio
 headless: true
 weight: 20
-title: 'Learning Hub'
+title: '**Learning Hub**'
 subtitle: ''
 
 content:
