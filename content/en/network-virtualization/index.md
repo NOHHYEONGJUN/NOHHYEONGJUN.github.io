@@ -60,7 +60,9 @@ sections:
       subtitle: ''
       text: |
         ## Introduction
+        <div style="text-align: justify;">
         Network virtualization and Multi-access Edge Computing (MEC) are key elements of modern network infrastructure, enabling more flexible, efficient, and intelligent network construction.
+        </div>
 
         - **Network Virtualization**: Abstracting physical network resources into software
         - **MEC**: Providing computing capabilities at the network edge to reduce latency and improve performance
