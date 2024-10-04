@@ -23,5 +23,5 @@ design:
     card_view_layout: custom
 
   title_style: 
-    margin_bottom: "20px"
+    margin_bottom: "100px"
 ---
