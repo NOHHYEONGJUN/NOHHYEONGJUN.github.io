@@ -169,33 +169,3 @@ ul.network-icon .big-icon {
 .wg-about .portrait-title h3 {
   font-size: 0.8rem;
 }
-
-.card {
-  overflow: hidden;
-  margin-bottom: 20px;
-}
-
-.card-image {
-  overflow: hidden;
-}
-
-.card-image img {
-  transition: transform 0.3s ease;
-}
-
-.card-image:hover img {
-  transform: scale(1.05);
-}
-
-.article-metadata {
-  margin-bottom: 10px;
-}
-
-.btn-links {
-  margin-top: 10px;
-}
-
-// 짝수 번째 카드의 이미지를 오른쪽으로 이동
-.row:nth-child(even) .card .row {
-  flex-direction: row-reverse;
-}
