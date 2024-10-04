@@ -1,6 +1,18 @@
 // Starter Blog Template
 // https://hugoblox.com/hugo-themes/
 
+.card-simple:hover {
+  background-color: rgb(240, 248, 255); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transform: translateY(-5px); 
+  transition: all 0.3s ease;
+}
+
+.dark .card-simple:hover {
+  background-color: rgb(41, 49, 61); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
 body {
   background-color: rgb(218, 222, 255);
 }
