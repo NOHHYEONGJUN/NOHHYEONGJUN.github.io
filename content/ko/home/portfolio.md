@@ -2,7 +2,7 @@
 widget: portfolio
 headless: true
 weight: 20
-title: 'Portfolio'
+title: '' # Portfolio 타이틀 제거
 subtitle: ''
 
 content:
