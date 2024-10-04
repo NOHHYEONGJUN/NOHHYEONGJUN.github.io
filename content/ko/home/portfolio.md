@@ -46,4 +46,23 @@ design:
   background: {}
   spacing: {padding: [0, 0, "120px", 0]}
 
+  css_style: |
+    .masonry-item {
+      width: calc(33.33% - 20px) !important;
+      margin: 10px !important;
+    }
+    .card {
+      height: 100%;
+    }
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+    .article-title {
+      flex-grow: 1;
+    }
+
+
 ---
