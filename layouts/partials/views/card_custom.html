@@ -18,7 +18,13 @@
         {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
         <img src="{{ $image.RelPermalink }}" class="card-image" alt="{{ $item.Title }}">
       {{ end }}
-      <h4 class="card-title">{{ $item.Title }}</h4>
+      <h4 class="card-title">
+        {{ if eq $item.Title "LiveStream on AWS" }}
+          LiveStream<br>on AWS
+        {{ else }}
+          {{ $item.Title }}
+        {{ end }}
+      </h4>
       <p class="card-text">{{ $item.Params.subtitle | default $item.Summary }}</p>
     </div>
   </a>
