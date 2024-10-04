@@ -2,10 +2,6 @@
 title: My page
 type: landing
 
-banner:
-  caption: ''
-  image: 'Cloud.jpg'
-
 sections:
   - block: markdown
     content:
