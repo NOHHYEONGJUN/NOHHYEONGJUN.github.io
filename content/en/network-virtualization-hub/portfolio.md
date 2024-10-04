@@ -10,7 +10,7 @@ headless: true
 # Order that this section appears on the page.
 weight: 20
 
-title: 'Network Virtualization'
+title: '**Network Virtualization**'
 subtitle: ''
 
 content:
@@ -31,10 +31,9 @@ content:
 
 design:
   columns: '1'
-  view: card
-  card_view_layout: small_image
-  flip_alt_rows: true
+  view: card_custom_2
+  flip_alt_rows: false
   background: {}
-  spacing: {padding: [0, 0, "120px", 0]}
+  spacing: {padding: [0, 0, "60px", 0]}
 
 ---

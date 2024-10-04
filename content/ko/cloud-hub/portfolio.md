@@ -2,7 +2,7 @@
 widget: portfolio
 headless: true
 weight: 20
-title: 'Cloud'
+title: '**Cloud**'
 subtitle: ''
 
 content:

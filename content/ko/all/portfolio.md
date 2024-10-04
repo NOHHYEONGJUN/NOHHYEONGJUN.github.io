@@ -21,7 +21,4 @@ design:
 
   view_options:
     card_view_layout: custom
-
-  title_style: 
-    margin_bottom: "100px"
 ---
