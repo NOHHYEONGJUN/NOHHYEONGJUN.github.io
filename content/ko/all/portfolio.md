@@ -17,7 +17,7 @@ design:
   view: card_custom
   flip_alt_rows: false
   background: {}
-  spacing: {padding: [0, 0, "120px", 0]}
+  spacing: {padding: [60px, 0, "120px", 0]}
 
   view_options:
     card_view_layout: custom
