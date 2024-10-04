@@ -4,7 +4,7 @@ type: landing
 
 banner:
   caption: ''
-  image: 'public&private-cloud.png'
+  image: 'Cloud.jpg'
 
 sections:
   - block: markdown
