@@ -172,6 +172,8 @@ ul.network-icon .big-icon {
 
 
 
+
+
 .section-container {
   display: flex;
   margin-bottom: 60px;
@@ -254,5 +256,104 @@ ul.network-icon .big-icon {
   
   .card-title-left h3 {
     white-space: normal;
+  }
+}
+
+
+
+
+
+.section-container-2 {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.content-card-2 {
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-header-2 {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.card-image-2 {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+
+.card-header-text-2 {
+  flex-grow: 1;
+}
+
+.card-title-2 {
+  font-size: 1.8rem;
+  margin: 0 0 10px 0;
+}
+
+.card-subtitle-2 {
+  font-size: 1.2rem;
+  color: #666;
+  margin: 0 0 5px 0;
+}
+
+.cloud-provider-2 {
+  font-size: 1rem;
+  color: #007bff;
+  margin: 0;
+}
+
+.card-body-2 {
+  padding: 20px;
+}
+
+.card-summary-2 {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.card-tags-2 {
+  margin-bottom: 15px;
+}
+
+.tag-2 {
+  display: inline-block;
+  background-color: #e9ecef;
+  color: #495057;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.cloud-services-2 {
+  font-size: 1rem;
+  color: #495057;
+  background-color: #f1f3f5;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+// 반응형 디자인
+@media (max-width: 768px) {
+  .card-header-2 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card-image-2 {
+    margin-right: 0;
+    margin-bottom: 15px;
   }
 }

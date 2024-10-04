@@ -1,0 +1,44 @@
+{{ $item := .item }}
+{{ $link := $item.RelPermalink }}
+{{ $target := "" }}
+{{ if $item.Params.external_link }}
+  {{ $link = $item.Params.external_link }}
+  {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
+{{ end }}
+{{ $resource := partial "blox-core/functions/get_featured_image.html" $item }}
+
+<div class="section-container-2">
+  <div class="content-card-2">
+    <div class="card-header-2">
+      {{ with $resource }}
+        {{ $image := .Resize "200x" }}
+        {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
+        <img src="{{ $image.RelPermalink }}" class="card-image-2" alt="{{ $item.Title }}">
+      {{ end }}
+      <div class="card-header-text-2">
+        <h4 class="card-title-2"><a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{ $item.Title }}</a></h4>
+        {{ with $item.Params.subtitle }}
+          <p class="card-subtitle-2">{{ . }}</p>
+        {{ end }}
+        {{ with $item.Params.cloud_provider }}
+          <p class="cloud-provider-2">Provider: {{ . }}</p>
+        {{ end }}
+      </div>
+    </div>
+    <div class="card-body-2">
+      <p class="card-summary-2">{{ $item.Summary }}</p>
+      {{ with $item.Params.tags }}
+        <div class="card-tags-2">
+          {{ range . }}
+            <span class="tag-2">{{ . }}</span>
+          {{ end }}
+        </div>
+      {{ end }}
+      {{ with $item.Params.cloud_services }}
+        <div class="cloud-services-2">
+          <strong>Services:</strong> {{ delimit . ", " }}
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</div>
