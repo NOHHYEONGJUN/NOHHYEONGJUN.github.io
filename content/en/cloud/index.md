@@ -5,7 +5,7 @@ type: landing
 sections:
   - block: markdown
     content:
-      title: 'Cloud Computing'
+      title: '**Cloud Computing**'
       subtitle: ''
       text: |
         <div style="text-align: center; margin: 20px 0;">

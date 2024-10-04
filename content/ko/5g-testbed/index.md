@@ -5,7 +5,7 @@ type: landing
 sections:
   - block: markdown
     content:
-      title: "OpenAirInterface 기반<br> 5G TestBed 구축"
+      title: '**OpenAirInterface 기반<br> 5G TestBed 구축**'
       subtitle: MEC
       text: |
         # Efficient Data Processing<br> with MEC in 5G Networks

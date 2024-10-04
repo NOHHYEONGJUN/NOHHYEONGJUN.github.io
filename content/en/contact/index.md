@@ -5,7 +5,7 @@ type: landing
 sections:
   - block: contact
     content:
-      title: Contact
+      title: '**Contact**'
       subtitle: '' 
       text: '' 
       contact_links:

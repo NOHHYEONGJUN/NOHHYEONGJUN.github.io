@@ -5,7 +5,7 @@ type: landing
 sections:
   - block: markdown
     content:
-      title: "Emotion Analysis-based Diary Service<br> Using KoBERT Model"
+      title: '**Emotion Analysis-based Diary Service<br> Using KoBERT Model**'
       subtitle: AI-powered Diary Application with Empathy
       text: |
         # Empathetic AI Diary
