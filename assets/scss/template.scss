@@ -193,6 +193,9 @@ ul.network-icon .big-icon {
   font-size: 2rem;
   margin-top: 0;
   font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .content-card {
@@ -226,6 +229,10 @@ ul.network-icon .big-icon {
   .section-container {
     padding: 0 20px;
   }
+  
+  .card-title-left h3 {
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 968px) {
@@ -243,5 +250,9 @@ ul.network-icon .big-icon {
 
   .card-title-left {
     margin-bottom: 20px;
+  }
+  
+  .card-title-left h3 {
+    white-space: normal;
   }
 }
