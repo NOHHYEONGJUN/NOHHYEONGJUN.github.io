@@ -17,7 +17,7 @@ sections:
           icon_pack: fab
           name: 010-2485-7804
           link: 'tel:010-2485-7804'
-        - icon: foursquare
+        - icon: periscope
           icon_pack: fab
           name: 전라북도 전주시 전북대학교 공과대학 7호관 512호
           link: 'https://www.google.com/maps/search/?api=1&query=35.84601324617979,127.13444961966684'
