@@ -12,7 +12,7 @@ sections:
         <div style="text-align: center; margin: 20px 0;">
           <img src="Project-Logo.png" alt="Project Logo" style="width: 100%; max-width: 1000px; height: auto;">
         </div>
-        - Access URL: https://www.olcl.shop
+        - Access URL: https://www.olcl.shop <br>
         - Test ID: user1 / CloudWave!
 
         
