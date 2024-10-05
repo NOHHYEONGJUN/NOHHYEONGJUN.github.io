@@ -17,8 +17,10 @@ author: admin
 #      path:  # enter filename of a video in /assets/media
 #  css_class: fullscreen
 ---
-👋 
-안녕하세요! 저는 전북대학교 **노형준**입니다.
+
+<br>
+
+👋 안녕하세요! 저는 전북대학교 **노형준**입니다.
 {style="font-size: 1.2rem; background: #5587ED; -webkit-background-clip: text; -webkit-text-fill-color: transparent;"}
 **컴퓨터 인공지능**을 전공하고 있습니다.
 {style="font-size: 1.2rem; background: #5587ED; -webkit-background-clip: text; -webkit-text-fill-color: transparent;"}
