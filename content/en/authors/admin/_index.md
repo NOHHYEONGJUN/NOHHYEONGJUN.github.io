@@ -76,6 +76,8 @@ I am currently studying **network virtualization** and **cloud computing** with 
 - Department of Computer Science, Jeonbuk National University
 - Network Service and Computing Laboratory (NSCL)
 
+<br>
+
 ### <i class="fas fa-laptop-code"></i> Research Interests
 - Network Function Virtualization (NFV)
 - Multi-access Edge Computing (MEC)
