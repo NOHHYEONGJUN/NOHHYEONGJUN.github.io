@@ -18,6 +18,8 @@ author: admin
 #  css_class: fullscreen
 ---
 
+<br>
+
 👋 Hi, there! I'm **NOH HYEONGJUN**
 {style="font-size: 1.2rem; background: #5587ED; -webkit-background-clip: text; -webkit-text-fill-color: transparent;"}
 Student majoring in **Computer Science** at Jeonbuk National University
