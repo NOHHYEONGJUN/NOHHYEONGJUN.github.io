@@ -84,6 +84,7 @@ social:
 - 컨테이너 오케스트레이션 (K8S, OpenStack)
 - CI/CD (GitLab, Jenkins, Harbor, ArgoCD, SonarQube)
 
+<br>
 
 {{< icon name="download" pack="fas" >}} {{< staticref "uploads/5G-on-Public-Cloud.pdf" "newtab" >}}Download{{< /staticref >}} 5G on Public Cloud 가이드 자료를 제공합니다.
 

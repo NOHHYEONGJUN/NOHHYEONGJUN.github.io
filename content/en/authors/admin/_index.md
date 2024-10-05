@@ -66,6 +66,7 @@ social:
 ---
 <div style="text-align: justify;">
 I am NOH HYEONGJUN, <br>
+
 a student in the Department of **Computer Science** at Jeonbuk National University.
 
 I am currently studying **network virtualization** and **cloud computing** with great interest.
@@ -81,6 +82,8 @@ I am currently studying **network virtualization** and **cloud computing** with 
 - Public Cloud (AWS)
 - Container Orchestration (K8S, OpenStack)
 - CI/CD (GitLab, Jenkins, Harbor, ArgoCD, SonarQube)
+
+<br>
 
 {{< icon name="download" pack="fas" >}} {{< staticref "uploads/5G-on-Pubic-Cloud.pdf" "newtab" >}}Download{{< /staticref >}} 5G on Public Cloud Guide as PDF.
 
