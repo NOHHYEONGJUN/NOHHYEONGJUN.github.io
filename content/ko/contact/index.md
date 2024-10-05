@@ -23,15 +23,15 @@ sections:
           link: 'https://www.google.com/maps/search/?api=1&query=35.84601324617979,127.13444961966684'
         - icon: square-github
           icon_pack: fab
-          name: https://github.com/NOHHYEONGJUN
+          name: GitHub
           link: 'https://github.com/NOHHYEONGJUN'
-        - icon: squre-gitlab
+        - icon: square-gitlab
           icon_pack: fab
-          name : https://gitlab.com/nohhyeongjun
+          name : GitLab
           link: 'https://gitlab.com/nohhyeongjun/nohhyeongjun/-/learn_gitlab'
         - icon: linkedin
           icon_pack: fab
-          name: https://linkedin.com/in/
+          name: LinkedIn
           link: 'https://linkedin.com/in/형준-노-22a1b5326'
 
         

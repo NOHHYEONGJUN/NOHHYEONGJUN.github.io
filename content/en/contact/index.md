@@ -9,18 +9,31 @@ sections:
       subtitle: '' 
       text: '' 
       contact_links:
-        - icon: google
+        - icon: square-google-plus
           icon_pack: fab
           name: nhj7804@jbnu.ac.kr
           link: 'mailto:nhj7804@jbnu.ac.kr'
-        - icon: whatsapp
+        - icon: square-whatsapp
           icon_pack: fab
           name: 010-2485-7804
           link: 'tel:010-2485-7804'
-        - icon: map-marked-alt
-          icon_pack: fas 
+        - icon: square-font-awesome
+          icon_pack: fab
           name: Room 512, No. 7 of Jeonbuk National University Technical College, Jeonju-si, Jeollabuk-do
           link: 'https://www.google.com/maps/search/?api=1&query=35.84601324617979,127.13444961966684'
+        - icon: square-github
+          icon_pack: fab
+          name: GitHub
+          link: 'https://github.com/NOHHYEONGJUN'
+        - icon: square-gitlab
+          icon_pack: fab
+          name : GitLab
+          link: 'https://gitlab.com/nohhyeongjun/nohhyeongjun/-/learn_gitlab'
+        - icon: linkedin
+          icon_pack: fab
+          name: LinkedIn
+          link: 'https://linkedin.com/in/형준-노-22a1b5326'
+
       autolink: true
       coordinates:
         latitude: '35.84601324617979'
