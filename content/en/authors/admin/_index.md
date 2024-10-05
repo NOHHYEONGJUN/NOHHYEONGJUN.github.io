@@ -64,11 +64,12 @@ social:
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 #email: ""
 ---
-
-'I am NOH HYEONGJUN, <br>
-a student in the Department of **Computer Science** at Jeonbuk National University.'
+<div style="text-align: justify;">
+I am NOH HYEONGJUN, <br>
+a student in the Department of **Computer Science** at Jeonbuk National University.
 
 I am currently studying **network virtualization** and **cloud computing** with great interest.
+</div><br>
 
 ### <i class="fas fa-university"></i> Affiliations
 - Department of Computer Science, Jeonbuk National University
