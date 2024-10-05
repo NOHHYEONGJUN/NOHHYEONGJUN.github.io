@@ -17,17 +17,17 @@ sections:
           icon_pack: fab
           name: 010-2485-7804
           link: 'tel:010-2485-7804'
-        - icon: map
+        - icon: google-maps
           icon_pack: fab
           name: 전라북도 전주시 전북대학교 공과대학 7호관 512호
           link: 'https://www.google.com/maps/search/?api=1&query=35.84601324617979,127.13444961966684'
-        - icon : github
-          icon_pack: github
-          name: Github
+        - icon: github
+          icon_pack: fab
+          name: https://github.com/NOHHYEONGJUN
           link: 'https://github.com/NOHHYEONGJUN'
-        - icon : linkedin
-          icon_pack: linkedin
-          name: Linkedin
+        - icon: linkedin
+          icon_pack: fab
+          name: https://linkedin.com/in/노형준
           link: 'https://linkedin.com/in/형준-노-22a1b5326'
         - icon: discord
           icon_pack: fab
