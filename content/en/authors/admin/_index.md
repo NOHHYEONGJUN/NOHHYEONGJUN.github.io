@@ -65,10 +65,10 @@ social:
 #email: ""
 ---
 
-I am NOH HYEONGJUN, 
-a student in the Department of Computer Science at Jeonbuk National University.
+'I am NOH HYEONGJUN, <br>
+a student in the Department of **Computer Science** at Jeonbuk National University.'
 
-I am currently studying network virtualization and cloud computing with great interest.
+I am currently studying **network virtualization** and **cloud computing** with great interest.
 
 ### <i class="fas fa-university"></i> Affiliations
 - Department of Computer Science, Jeonbuk National University
