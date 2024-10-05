@@ -30,13 +30,6 @@ marketing:
   verification:
     google: 'z2Re7bEGUrh2Ff86fRxUwrkQSVouSEMImv0ZX8Lt640'
     baidu: ''
-  og:
-    title: '전북대학교 노형준의 포트폴리오'
-    type: 'website'
-    url: 'https://nohhyeongjun.github.io/'
-    image: '/media/og-image.png'
-    site_name: 'NOHHYEONGJUN PORTFOLIO'
-    description: '전북대학교 컴퓨터인공지능학부 노형준의 연구 및 프로젝트 포트폴리오'
 
 # Site header
 

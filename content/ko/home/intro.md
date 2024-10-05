@@ -28,3 +28,5 @@ author: admin
 {style="font-size: 1.2rem; background: #5587ED; -webkit-background-clip: text; -webkit-text-fill-color: transparent;"}
 
   [Resume](/about/)에서 제 포트폴리오를 확인해주세요! 😍
+
+  <br>
